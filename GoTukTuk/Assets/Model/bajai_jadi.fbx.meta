@@ -1,43 +1,41 @@
 fileFormatVersion: 2
 guid: 3b97c40ad1db640709db43931536b8b6
-timeCreated: 1484204773
+timeCreated: 1484666113
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: Bajai
     100002: //RootNode
-    100004: Body.B
-    100006: Body.C
-    100008: Body.F
-    100010: Bone
-    100012: Cube
-    100014: Sun
-    100016: Tire.F
-    100018: Tire.F_end
-    100020: Tire.L
-    100022: Tire.L_end
-    100024: Tire.R
-    100026: Tire.R_end
-    100028: TireDir.F
+    100004: BajaiO
+    100006: Body.B
+    100008: Body.C
+    100010: Body.F
+    100012: Bone
+    100014: Tire.F
+    100016: Tire.F_end
+    100018: Tire.L
+    100020: Tire.L_end
+    100022: Tire.R
+    100024: Tire.R_end
+    100026: TireDir.F
     400000: Bajai
     400002: //RootNode
-    400004: Body.B
-    400006: Body.C
-    400008: Body.F
-    400010: Bone
-    400012: Cube
-    400014: Sun
-    400016: Tire.F
-    400018: Tire.F_end
-    400020: Tire.L
-    400022: Tire.L_end
-    400024: Tire.R
-    400026: Tire.R_end
-    400028: TireDir.F
-    4300000: Cube
+    400004: BajaiO
+    400006: Body.B
+    400008: Body.C
+    400010: Body.F
+    400012: Bone
+    400014: Tire.F
+    400016: Tire.F_end
+    400018: Tire.L
+    400020: Tire.L_end
+    400022: Tire.R
+    400024: Tire.R_end
+    400026: TireDir.F
+    4300000: BajaiO
     9500000: //RootNode
-    13700000: Cube
+    13700000: BajaiO
   materials:
     importMaterials: 1
     materialName: 0
@@ -48,11 +46,12 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    animationImportErrors: 
+    animationImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftUpperLeg' not found\n"
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -67,7 +66,7 @@ ModelImporter:
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
@@ -97,7 +96,7 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
