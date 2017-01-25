@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 29bbf7eada5254a64bcd62717b690afc
-timeCreated: 1485220431
+timeCreated: 1485352905
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -35,10 +35,13 @@ ModelImporter:
     400026: TireDir.F
     4300000: BajaiO
     7400000: ABajai|belokKanan
-    7400002: ABajai|Idle
-    7400004: ABajai|majuBiasa
-    7400006: ABajai|majuBiasa.001
-    7400008: ABajai|mencolot
+    7400002: ABajai|belokKanan.001
+    7400004: ABajai|belokKiri
+    7400006: ABajai|Idle
+    7400008: ABajai|majuBiasa
+    7400010: ABajai|majuBiasa.001
+    7400012: ABajai|melompat
+    7400014: ABajai|mencolot
     9500000: //RootNode
     13700000: BajaiO
   materials:
@@ -67,7 +70,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
