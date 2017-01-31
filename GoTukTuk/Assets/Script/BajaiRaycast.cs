@@ -11,6 +11,7 @@ public class BajaiRaycast : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+<<<<<<< Updated upstream
 		Vector3 direction = transform.TransformDirection(Vector3.forward);
 		RaycastHit hit;
 		Debug.DrawRay(transform.position, direction * 2, Color.green);
@@ -22,5 +23,8 @@ public class BajaiRaycast : MonoBehaviour {
 				Debug.Log("HIT");
 			}
 		}
+=======
+		
+>>>>>>> Stashed changes
 	}
 }

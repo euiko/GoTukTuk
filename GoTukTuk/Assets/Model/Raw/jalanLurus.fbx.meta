@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 8edc9551434b05644b3664d2edf936c3
 timeCreated: 1485745285
+=======
+guid: 4728fb19f1b8c8e4fad834cd18571ecc
+timeCreated: 1485659364
+>>>>>>> Stashed changes
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -10,6 +15,10 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: jalanLurus
+<<<<<<< Updated upstream
+=======
+    6400000: //RootNode
+>>>>>>> Stashed changes
   materials:
     importMaterials: 1
     materialName: 0
@@ -36,7 +45,11 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
+<<<<<<< Updated upstream
     addColliders: 0
+=======
+    addColliders: 1
+>>>>>>> Stashed changes
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

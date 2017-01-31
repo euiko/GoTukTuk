@@ -35,22 +35,33 @@ public class BajajController : MonoBehaviour {
 		if (Input.GetKey ("right")) {
 			aBajai.SetBool ("inputR", true);
 			direction = "right";
+<<<<<<< Updated upstream
 			transform.rotation = Quaternion.Euler(0,curAngle,0);
+=======
+>>>>>>> Stashed changes
 			targetAngle = curAngle + 90;
 		}
 		if (Input.GetKey ("left")) {
 			aBajai.SetBool ("inputL", true);
 			direction = "left";
+<<<<<<< Updated upstream
 			transform.rotation = Quaternion.Euler(0,curAngle,0);
+=======
+>>>>>>> Stashed changes
 			targetAngle = curAngle - 90;
 		}
 
 
+<<<<<<< Updated upstream
+=======
+		checkTurn (1, direction);
+>>>>>>> Stashed changes
 		aBajai.SetFloat ("inputV", speed);
 	}
 
 	// Update is called once per frame
 	void Update () {
+<<<<<<< Updated upstream
 		checkTurn (5, direction);
 	}
 
@@ -63,6 +74,11 @@ public class BajajController : MonoBehaviour {
 		}
 		res = cNum * 90;
 		return res;
+=======
+
+		checkTurn (1, direction);
+
+>>>>>>> Stashed changes
 	}
 
 	void checkTurn (int inc, string direction = "right"){
@@ -71,9 +87,15 @@ public class BajajController : MonoBehaviour {
 			transform.RotateAround( direction == "right" ? TireBR.transform.position : TireBL.transform.position, Vector3.up, direction == "right" ? inc : -inc);
 
 			if(curAngle == targetAngle){
+<<<<<<< Updated upstream
 				curAngle = roundTo90 (targetAngle);
 				Debug.Log (curAngle);
 				transform.rotation = Quaternion.Euler(0,curAngle,0);
+=======
+				int diff = targetAngle % 90;
+				targetAngle -= diff;
+				transform.rotation = Quaternion.Euler(0,targetAngle,0);
+>>>>>>> Stashed changes
 				aBajai.SetBool ("inputR", false);
 				aBajai.SetBool ("inputL", false);
 			}

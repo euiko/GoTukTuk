@@ -1,11 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: a05ae592f462cb440b5f540e386e39ac
-timeCreated: 1485798653
-=======
-guid: 5659d7870d1816444befe3ae10141266
-timeCreated: 1485712725
->>>>>>> Stashed changes
+guid: 2ec921dc6e0cd694782ca621c8085d0b
+timeCreated: 1485659360
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -14,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: jumper
+    4300000: jalanBelokKiri
     6400000: //RootNode
   materials:
     importMaterials: 1
