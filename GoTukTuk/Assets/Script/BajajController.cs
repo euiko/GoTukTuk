@@ -35,24 +35,34 @@ public class BajajController : MonoBehaviour {
 		if (Input.GetKey ("right")) {
 			aBajai.SetBool ("inputR", true);
 			direction = "right";
+			transform.rotation = Quaternion.Euler(0,curAngle,0);
 			targetAngle = curAngle + 90;
 		}
 		if (Input.GetKey ("left")) {
 			aBajai.SetBool ("inputL", true);
 			direction = "left";
+			transform.rotation = Quaternion.Euler(0,curAngle,0);
 			targetAngle = curAngle - 90;
 		}
 
 
-		checkTurn (1, direction);
 		aBajai.SetFloat ("inputV", speed);
 	}
 
 	// Update is called once per frame
 	void Update () {
+		checkTurn (5, direction);
+	}
 
-		checkTurn (1, direction);
-
+	int roundTo90(int num){
+		int res;
+		int cNum = num / 90;
+		int diff = num % 90;
+		if (diff >= 45) {
+			cNum += 1;
+		}
+		res = cNum * 90;
+		return res;
 	}
 
 	void checkTurn (int inc, string direction = "right"){
@@ -61,9 +71,9 @@ public class BajajController : MonoBehaviour {
 			transform.RotateAround( direction == "right" ? TireBR.transform.position : TireBL.transform.position, Vector3.up, direction == "right" ? inc : -inc);
 
 			if(curAngle == targetAngle){
-				int diff = targetAngle % 90;
-				targetAngle -= diff;
-				transform.rotation = Quaternion.Euler(0,targetAngle,0);
+				curAngle = roundTo90 (targetAngle);
+				Debug.Log (curAngle);
+				transform.rotation = Quaternion.Euler(0,curAngle,0);
 				aBajai.SetBool ("inputR", false);
 				aBajai.SetBool ("inputL", false);
 			}
