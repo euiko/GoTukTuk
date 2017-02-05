@@ -1,16 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\model\PlayerDirection.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\BajajController.cs">
     <Files>
-<<<<<<< Updated upstream
-      <File FileName="Assets\Script\BajajController.cs" Line="91" Column="114" />
-      <File FileName="Assets\Script\BajaiRaycast.cs" Line="23" Column="37" />
-      <File FileName="Assets\Script\model\PlayerDirection.cs" Line="11" Column="57" />
-=======
-      <File FileName="Assets\Script\BajajController.cs" Line="29" Column="27" />
-      <File FileName="Assets\Script\model\PlayerDirection.cs" Line="82" Column="41" />
-      <File FileName="Assets\Script\BajaiRaycast.cs" Line="23" Column="37" />
->>>>>>> Stashed changes
+      <File FileName="Assets\Script\BajaiRaycast.cs" Line="24" Column="3" />
+      <File FileName="Assets\Script\model\StreetProp.cs" Line="12" Column="1" />
+      <File FileName="Assets\Script\BajajController.cs" Line="70" Column="66" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

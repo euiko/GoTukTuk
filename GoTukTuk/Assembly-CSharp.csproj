@@ -50,6 +50,7 @@
      <Compile Include="Assets\Script\BajaiRaycast.cs" />
      <Compile Include="Assets\Script\BajajController.cs" />
      <Compile Include="Assets\Script\model\PlayerDirection.cs" />
+     <Compile Include="Assets\Script\model\StreetProp.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
