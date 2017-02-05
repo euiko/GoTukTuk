@@ -1,0 +1,87 @@
+﻿using System.Collections;
+using UnityEngine;
+using System;
+
+public class PlayerDirection{
+	private int[,] direction = new int[2,4]{{0, 90, 180, 270}, {90, 180, 270, 360}};
+	private int currentDirection = 99;
+	private int currentDirectionIndex = 3;
+	private int speed = 1;
+	private bool isTurning = false;
+
+	public Vector3 getVectorDirection(int direction, int index, Vector3 currentRotation){
+		currentRotation.z = this.direction [direction, index];
+		return currentRotation;
+	}
+
+	public int getDirection(int direction, int index){
+		return this.direction[direction,index];
+	}
+
+	public int getTargetDirection(int direction, int index){
+		return this.direction [direction == 0 ? 1 : 0 , index];
+	}
+
+	public int getDirection(){
+		return this.direction[this.currentDirection, this.currentDirectionIndex];
+	}
+
+	public int getTargetDirection(){
+		return this.direction [this.currentDirection == 0 ? 1 : 0 , this.currentDirectionIndex];
+	}
+
+	public void setCurrentDirection(int value){
+		if (this.currentDirection != value)
+			isTurning = true;
+		else
+			isTurning = false;
+		this.currentDirection = limit(value, 0, 1);
+	}
+
+	public void setCurrentDirectionIndex(int value){
+		Debug.Log ("Before :" + value);
+		this.currentDirectionIndex = limit(value, 0, 3);
+		Debug.Log (this.currentDirectionIndex);
+	}
+
+	public int getCurrentDirection(){
+		return this.currentDirection;
+	}
+
+	public int getCurrentDirectionIndex(){
+		return this.currentDirectionIndex;
+	}
+		
+	public void setSpeed(int speed){
+		this.speed = speed;
+	}
+
+	public int getSpeed(){
+		return this.speed;
+	}
+
+	public int getNextDirection(){
+		if (isTurning) {
+			isTurning = false;
+			return 0;
+		}
+		else if (this.currentDirection == 0)
+			return 1;
+		else if (this.currentDirection == 1)
+			return -1;
+		else
+			return 0;
+	}
+		
+	private int limit(int value, int start, int end){
+		int range = end - start + 1;
+		Debug.Log ("Range  = " + range);
+		if (value > end) {
+			return value - (value / range) * range;
+		} else if (value < start) {
+			return value + Math.Abs(((value - end) / range) * range);
+		} else{
+			return value;
+		}
+	}
+}

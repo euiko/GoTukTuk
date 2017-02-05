@@ -2,9 +2,15 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\model\PlayerDirection.cs">
     <Files>
+<<<<<<< Updated upstream
       <File FileName="Assets\Script\BajajController.cs" Line="91" Column="114" />
       <File FileName="Assets\Script\BajaiRaycast.cs" Line="23" Column="37" />
       <File FileName="Assets\Script\model\PlayerDirection.cs" Line="11" Column="57" />
+=======
+      <File FileName="Assets\Script\BajajController.cs" Line="29" Column="27" />
+      <File FileName="Assets\Script\model\PlayerDirection.cs" Line="82" Column="41" />
+      <File FileName="Assets\Script\BajaiRaycast.cs" Line="23" Column="37" />
+>>>>>>> Stashed changes
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

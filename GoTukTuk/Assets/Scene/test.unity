@@ -741,7 +741,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 956944475}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: -6.05, y: 1.31, z: -26.62}
+=======
+  m_LocalPosition: {x: -6.05, y: 1.31, z: -25.8}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 697307336}
@@ -760,7 +764,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a109ddfd1a332143a8583bbf1aee026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   maxRayDistance: 25
+=======
+>>>>>>> Stashed changes
 --- !u!1 &969311909
 GameObject:
   m_ObjectHideFlags: 0
