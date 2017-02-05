@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 9dc87ea18ab2e27449446dd9c4fed30d
-timeCreated: 1485745405
+guid: 05c54918688d4ae45a33c2fa58e52511
+timeCreated: 1486283747
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -11,8 +11,6 @@ ModelImporter:
     3300000: //RootNode
     4300000: jalanBelokKanan
     6400000: //RootNode
-    7400000: Default Take
-    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -38,7 +36,7 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
@@ -75,7 +73,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class BajajController : MonoBehaviour {
 
 	public static PlayerDirection playerDirection = new PlayerDirection ();
+	public static bool[] cmd = {false, false};
 
 	public WheelCollider TireBL;
 	public WheelCollider TireBR;
@@ -15,7 +16,7 @@ public class BajajController : MonoBehaviour {
 	private Animator aBajai;
 	private bool state;
 	private int curAngle;
-	private enum to {right, left};
+	public enum to {right, left};
 
 	// Use this for initialization
 	void Start () {
@@ -37,10 +38,12 @@ public class BajajController : MonoBehaviour {
 		TireBL.motorTorque = maxTorque * speed;
 		TireBR.motorTorque = maxTorque * speed;
 
-		if (Input.GetKeyUp ("right")) {
+		if (cmd[0]) {
+			cmd [0] = false;
 			turnTo(to.right);
 		}
-		if (Input.GetKeyUp ("left")) {
+		if (cmd[1]) {
+			cmd [1] = false;
 			turnTo(to.left);
 		}
 
@@ -53,7 +56,7 @@ public class BajajController : MonoBehaviour {
 		checkTurn();
 	}
 
-	void turnTo(BajajController.to direction){
+	public void turnTo(BajajController.to direction){
 		playerDirection.setCurrentDirection((int) direction);
 		playerDirection.setCurrentDirectionIndex (playerDirection.getCurrentDirectionIndex () + playerDirection.getNextDirection());
 		transform.rotation = Quaternion.Euler(0,playerDirection.getDirection(),0);
