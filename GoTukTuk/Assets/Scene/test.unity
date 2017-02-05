@@ -560,7 +560,6 @@ GameObject:
   m_Component:
   - component: {fileID: 907343231}
   - component: {fileID: 907343232}
-  - component: {fileID: 907343233}
   m_Layer: 8
   m_Name: BajaiO
   m_TagString: Untagged
@@ -631,20 +630,9 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 585365050}
   m_AABB:
-    m_Center: {x: 9.313226e-10, y: 0.0012883209, z: 0.038339667}
-    m_Extent: {x: 0.022492584, y: 0.042963352, z: 0.02522432}
+    m_Center: {x: 0, y: 0.0021487102, z: -32767.965}
+    m_Extent: {x: 0.022492584, y: 0.04382374, z: 32768.027}
   m_DirtyAABB: 0
---- !u!114 &907343233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 907343230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a109ddfd1a332143a8583bbf1aee026, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!146 &924761411
 WheelCollider:
   m_ObjectHideFlags: 0
@@ -687,6 +675,7 @@ GameObject:
   - component: {fileID: 956944478}
   - component: {fileID: 956944477}
   - component: {fileID: 956944476}
+  - component: {fileID: 956944480}
   m_Layer: 0
   m_Name: bajai_jadi_texturetest_animasi
   m_TagString: Untagged
@@ -752,7 +741,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 956944475}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.05, y: -6.48, z: -26.62}
+  m_LocalPosition: {x: -6.05, y: 1.31, z: -26.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 697307336}
@@ -760,6 +749,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &956944480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 956944475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a109ddfd1a332143a8583bbf1aee026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxRayDistance: 25
 --- !u!1 &969311909
 GameObject:
   m_ObjectHideFlags: 0
