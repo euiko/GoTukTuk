@@ -72,7 +72,30 @@ public class PlayerDirection{
 		else
 			return 0;
 	}
-		
+
+	public float getDirectionAxis(Vector3 v){
+		if (this.currentDirection == 0) {
+			if (this.getTargetDirection () == direction [1, 0] || this.getTargetDirection () == direction [1, 2]) {
+				//Debug.Log("x");
+				return v.x;
+			} else if (this.getTargetDirection () == direction [1, 1] || this.getTargetDirection () == direction [1, 3]) {
+				return v.z;
+			} else {
+				return 0;
+			}
+		} else if (this.currentDirection == 1) {
+			if (this.getTargetDirection () == direction [0, 0] || this.getTargetDirection () == direction [0, 2]) {
+				return v.z;
+			} else if (this.getTargetDirection () == direction [0, 1] || this.getTargetDirection () == direction [0, 3]) {
+				return v.x;
+			} else {
+				return 0;
+			}
+		} else {
+			return 0;
+		}
+	}
+
 	private int limit(int value, int start, int end){
 		int range = end - start + 1;
 		Debug.Log ("Range  = " + range);
