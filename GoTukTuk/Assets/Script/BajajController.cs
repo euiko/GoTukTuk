@@ -14,7 +14,7 @@ public class BajajController : MonoBehaviour {
 
 	private Rigidbody rbBajai;
 	private Animator aBajai;
-	private bool state;
+	private bool state, isCentered = false;
 	private int curAngle;
 	public enum to {right, left};
 
@@ -54,6 +54,7 @@ public class BajajController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		checkTurn();
+		//moveToCenterOfRoad();
 	}
 
 	public void turnTo(BajajController.to direction){
@@ -75,6 +76,7 @@ public class BajajController : MonoBehaviour {
 					Debug.Log (curAngle);
 					transform.rotation = Quaternion.Euler (0, curAngle, 0);
 					state = false;
+					isCentered = false;
 				}
 				break;
 			case 1:
@@ -85,10 +87,30 @@ public class BajajController : MonoBehaviour {
 					Debug.Log (curAngle);
 					transform.rotation = Quaternion.Euler (0, curAngle, 0);
 					state = false;
+					isCentered = false;
 				}
 				break;
 			default:
 				break;
+			}
+		}
+	}
+
+	void moveToCenterOfRoad(){
+		BajaiRaycast rayO = GetComponent<BajaiRaycast> ();
+		if (rayO.currentStreet != null) {
+			GameObject go = rayO.currentStreet;
+			GameObject go1 = rayO.nextStreet;
+			if (Mathf.Round (BajajController.playerDirection.getDirectionAxis(transform.position)) != Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position))) {
+				if (!isCentered && go1 != null) {
+					Debug.Log ("Not isCentered");
+					float step = 300 * Time.deltaTime;
+					transform.position = Vector3.MoveTowards (transform.position, go.transform.position, step);
+					if (Mathf.Round (BajajController.playerDirection.getDirectionAxis (transform.position)) == Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position))) {
+						isCentered = true;
+						Debug.Log ("isCentered");
+					}
+				}
 			}
 		}
 	}
