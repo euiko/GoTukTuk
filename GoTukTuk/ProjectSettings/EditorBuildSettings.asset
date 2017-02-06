@@ -6,4 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scene/test.unity
+=======
+    path: Assets/Scene/Menu/HomeScreen1.unity
+  - enabled: 1
+    path: Assets/Scene/Menu/StageBandung.unity
+  - enabled: 1
+    path: Assets/Scene/Menu/StageJakarta.unity
+  - enabled: 1
+    path: Assets/Scene/Menu/StageJogja.unity
+  - enabled: 1
+    path: Assets/Scene/Menu/StageMenu.unity
+  - enabled: 1
+    path: Assets/Scene/Menu/StageSurabaya.unity
+>>>>>>> 121ea1b67e9e6553a789e3d6aa124e2165c87d7f

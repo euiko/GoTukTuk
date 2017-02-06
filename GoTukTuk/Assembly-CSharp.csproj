@@ -46,10 +46,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\NewBehaviourScript.cs" />
      <Compile Include="Assets\Script\BajaiRaycast.cs" />
      <Compile Include="Assets\Script\BajajController.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Script\BajajCreator.cs" />
+=======
+     <Compile Include="Assets\Script\Menu\BackToStage.cs" />
+     <Compile Include="Assets\Script\Menu\ButtonBackToMainMenu.cs" />
+     <Compile Include="Assets\Script\Menu\Menu.cs" />
+     <Compile Include="Assets\Script\Menu\MenuManager.cs" />
+     <Compile Include="Assets\Script\Menu\StageLevelBandung.cs" />
+     <Compile Include="Assets\Script\Menu\StageLevelJakarta.cs" />
+     <Compile Include="Assets\Script\Menu\StageLevelJogja.cs" />
+     <Compile Include="Assets\Script\Menu\StageLevelSby.cs" />
+     <Compile Include="Assets\Script\Menu\playButton.cs" />
+     <Compile Include="Assets\Script\Menu\soundButton.cs" />
+>>>>>>> 121ea1b67e9e6553a789e3d6aa124e2165c87d7f
      <Compile Include="Assets\Script\model\PlayerDirection.cs" />
      <Compile Include="Assets\Script\model\StreetProp.cs" />
  <Reference Include="UnityEngine.UI">
