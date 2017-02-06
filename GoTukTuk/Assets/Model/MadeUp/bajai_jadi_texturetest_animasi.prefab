@@ -615,7 +615,7 @@ MonoBehaviour:
   TireBL: {fileID: 146944539644299530}
   TireBR: {fileID: 146677701467741124}
   TireF: {fileID: 146360443135148274}
-  maxTorque: 5000
+  maxTorque: 7500
 --- !u!137 &137148295973922438
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

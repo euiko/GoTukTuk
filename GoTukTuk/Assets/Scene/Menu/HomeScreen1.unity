@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074002, b: 0.3587271, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -670,6 +670,7 @@ GameObject:
   - component: {fileID: 1445654613}
   - component: {fileID: 1445654616}
   - component: {fileID: 1445654617}
+  - component: {fileID: 1445654618}
   m_Layer: 5
   m_Name: ButtonPlay
   m_TagString: Untagged
@@ -797,6 +798,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e85837997ec72d46850c37dc1d10bd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!123 &1445654618
+LensFlare:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445654611}
+  m_Enabled: 1
+  m_Flare: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Brightness: 1
+  m_FadeSpeed: 3
+  m_IgnoreLayers:
+    serializedVersion: 2
+    m_Bits: 6
+  m_Directional: 0
 --- !u!1 &1674699487
 GameObject:
   m_ObjectHideFlags: 0
