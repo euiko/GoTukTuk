@@ -16,7 +16,7 @@ public class BajaiRaycast : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		v = transform.position;
-		v.z += 4;
+		v.z += 3;
 
 		direction [0] = transform.TransformDirection (Vector3.forward);
 
@@ -28,7 +28,7 @@ public class BajaiRaycast : MonoBehaviour {
 		if (Physics.Raycast(ray1, out hit1, maxRayDistance))
 		{
 			if (hit1.collider.gameObject.name.Contains("jalan")){
-				Debug.Log("HIT1 - " + hit1.collider.gameObject.name );
+				//Debug.Log("HIT1 - " + hit1.collider.gameObject.name );
 			}
 		}
 
@@ -37,7 +37,20 @@ public class BajaiRaycast : MonoBehaviour {
 		if (Physics.Raycast(ray2, out hit2, maxRayDistance))
 		{
 			if (hit2.collider.gameObject.name.Contains("jalan")){
-				Debug.Log("HIT2 - " + hit2.collider.gameObject.name );
+				GameObject go = hit2.collider.gameObject;
+
+				if (!go.GetComponent<StreetProp>().isCommandExecuted) {
+					Debug.Log("HIT2 - " + go.GetComponent<StreetProp>().cmd );
+					if ( Mathf.Round(BajajController.playerDirection.getDirectionAxis(v)) == Mathf.Round(BajajController.playerDirection.getDirectionAxis(go.transform.position))) {
+						Debug.Log ("position = true");
+						if (go.GetComponent<StreetProp>().turnListener(StreetProp.command.turnRight)) {
+							BajajController.cmd [0] = true;
+						}else if (go.GetComponent<StreetProp>().turnListener(StreetProp.command.turnLeft)) {
+							BajajController.cmd [1] = true;
+						}
+						go.GetComponent<StreetProp>().isCommandExecuted = true;
+					}
+				}
 			}
 		}
 	}

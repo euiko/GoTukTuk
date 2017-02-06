@@ -5,7 +5,12 @@ using UnityEngine;
 public class StreetProp : MonoBehaviour {
 
 	public enum command {noCommand, turnLeft, turnRight, jump};
+	public enum type {normal, start, finish};
 
 	public StreetProp.command cmd;
+	public bool isCommandExecuted = false;
 
+	public bool turnListener(command cmd){
+		return this.cmd == cmd ? true : false;
+	}
 }

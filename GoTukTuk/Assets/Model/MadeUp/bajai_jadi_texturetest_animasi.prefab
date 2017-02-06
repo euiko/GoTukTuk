@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4880881731487756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tire.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,7 +35,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4280612297787664}
   - component: {fileID: 146518381237419818}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tireLC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4615688466662162}
   - component: {fileID: 146237494855165410}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tireFC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4197516656190292}
   - component: {fileID: 65822920275233816}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: bodyCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4221767636888584}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tire.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4778419294622176}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body.F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4223267173370556}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tire.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4280347689937826}
   - component: {fileID: 137519515144718998}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BajaiO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4229328979894690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,8 @@ GameObject:
   - component: {fileID: 95140619056197220}
   - component: {fileID: 54505697358621702}
   - component: {fileID: 114169500340674304}
-  m_Layer: 0
+  - component: {fileID: 114717687973861136}
+  m_Layer: 8
   m_Name: bajai_jadi_texturetest_animasi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +177,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4616692860993212}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TireDir.F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4000569568237246}
   - component: {fileID: 146321658512505128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tireRC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +208,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4382598917863706}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body.C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +223,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4525547172342840}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tire.F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +238,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4648772173117324}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tire.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +253,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4040815775219148}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tire.F_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,7 +268,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4413448001957028}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ABajai
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +283,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4722102374499114}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body.B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -534,7 +535,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1431451777632488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6071117, y: -6.86, z: -28.21346}
+  m_LocalPosition: {x: -6.05, y: 1.31, z: -21.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4413448001957028}
@@ -549,7 +550,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1431451777632488}
   serializedVersion: 2
-  m_Mass: 500
+  m_Mass: 2000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -597,10 +598,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d38b87e51556348bdfe817f11113fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TireBL: {fileID: 0}
-  TireBR: {fileID: 0}
-  TireF: {fileID: 0}
-  maxTorque: 50
+  TireBL: {fileID: 146518381237419818}
+  TireBR: {fileID: 146321658512505128}
+  TireF: {fileID: 146237494855165410}
+  maxTorque: 5000
+--- !u!114 &114717687973861136
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431451777632488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a109ddfd1a332143a8583bbf1aee026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxRayDistance: 25
 --- !u!137 &137519515144718998
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -649,8 +662,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 4229328979894690}
   m_AABB:
-    m_Center: {x: 9.313226e-10, y: 0.0012883209, z: 0.038339667}
-    m_Extent: {x: 0.022492584, y: 0.042963352, z: 0.02522432}
+    m_Center: {x: 0, y: 0.0021487102, z: -32767.965}
+    m_Extent: {x: 0.022492584, y: 0.04382374, z: 32768.027}
   m_DirtyAABB: 0
 --- !u!146 &146237494855165410
 WheelCollider:
@@ -666,7 +679,7 @@ WheelCollider:
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
-  m_Mass: 20
+  m_Mass: 2
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -675,11 +688,11 @@ WheelCollider:
     m_AsymptoteValue: 0.5
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
+    m_ExtremumSlip: 23.1
+    m_ExtremumValue: 18.39
+    m_AsymptoteSlip: 19.02
+    m_AsymptoteValue: 7.16
+    m_Stiffness: 16
   m_Enabled: 1
 --- !u!146 &146321658512505128
 WheelCollider:
@@ -695,7 +708,7 @@ WheelCollider:
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
-  m_Mass: 20
+  m_Mass: 2
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -704,11 +717,11 @@ WheelCollider:
     m_AsymptoteValue: 0.5
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
+    m_ExtremumSlip: 23.1
+    m_ExtremumValue: 18.39
+    m_AsymptoteSlip: 19.02
+    m_AsymptoteValue: 7.16
+    m_Stiffness: 16
   m_Enabled: 1
 --- !u!146 &146518381237419818
 WheelCollider:
@@ -724,7 +737,7 @@ WheelCollider:
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
-  m_Mass: 20
+  m_Mass: 2
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -733,9 +746,9 @@ WheelCollider:
     m_AsymptoteValue: 0.5
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
+    m_ExtremumSlip: 23.1
+    m_ExtremumValue: 18.39
+    m_AsymptoteSlip: 19.02
+    m_AsymptoteValue: 7.16
+    m_Stiffness: 16
   m_Enabled: 1
