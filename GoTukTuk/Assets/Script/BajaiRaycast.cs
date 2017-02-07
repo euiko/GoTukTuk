@@ -5,6 +5,9 @@ using UnityEngine;
 public class BajaiRaycast : MonoBehaviour {
 
 	public float maxRayDistance = 25;
+	public GameObject currentStreet;
+	public GameObject nextStreet;
+
 	Vector3[] direction = {Vector3.forward, Vector3.down};
 	private Vector3 v;
 
@@ -18,40 +21,51 @@ public class BajaiRaycast : MonoBehaviour {
 		v = transform.position;
 		v.z += 3;
 
+		float maxRay1Distance = 15;
+
 		direction [0] = transform.TransformDirection (Vector3.forward);
 
-		Debug.DrawLine (v, v + direction[0] *maxRayDistance, Color.green);
+		Debug.DrawLine (v, v + direction[0] *maxRay1Distance, Color.green);
 		Debug.DrawLine (v, v + direction[1] *maxRayDistance, Color.red);
-
-		Ray ray1 = new Ray (v, direction[0]);
-		RaycastHit hit1;
-		if (Physics.Raycast(ray1, out hit1, maxRayDistance))
-		{
-			if (hit1.collider.gameObject.name.Contains("jalan")){
-				//Debug.Log("HIT1 - " + hit1.collider.gameObject.name );
-			}
-		}
 
 		Ray ray2 = new Ray (v, direction[1]);
 		RaycastHit hit2;
 		if (Physics.Raycast(ray2, out hit2, maxRayDistance))
 		{
-			if (hit2.collider.gameObject.name.Contains("jalan")){
+			if (hit2.collider.gameObject.name.Contains ("jalan")) {
 				GameObject go = hit2.collider.gameObject;
-
-				if (!go.GetComponent<StreetProp>().isCommandExecuted) {
-					Debug.Log("HIT2 - " + go.GetComponent<StreetProp>().cmd );
-					if ( Mathf.Round(BajajController.playerDirection.getDirectionAxis(v)) == Mathf.Round(BajajController.playerDirection.getDirectionAxis(go.transform.position))) {
+				currentStreet = hit2.collider.gameObject;
+				if (!go.GetComponent<StreetProp> ().isCommandExecuted) {
+					Debug.Log (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v)) + " - " + Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position)));
+					if (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v)) == Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position))) {
 						Debug.Log ("position = true");
-						if (go.GetComponent<StreetProp>().turnListener(StreetProp.command.turnRight)) {
+						if (go.GetComponent<StreetProp> ().turnListener (StreetProp.command.turnRight)) {
 							BajajController.cmd [0] = true;
-						}else if (go.GetComponent<StreetProp>().turnListener(StreetProp.command.turnLeft)) {
+						} else if (go.GetComponent<StreetProp> ().turnListener (StreetProp.command.turnLeft)) {
 							BajajController.cmd [1] = true;
 						}
-						go.GetComponent<StreetProp>().isCommandExecuted = true;
+						go.GetComponent<StreetProp> ().isCommandExecuted = true;
 					}
 				}
+			} else {
+				currentStreet = null;
 			}
+		}
+
+		Ray ray1 = new Ray (v, direction[0]);
+		RaycastHit[] hits = Physics.RaycastAll(ray1, maxRay1Distance);
+		if (hits.Length > 1) {
+			if (Physics.Raycast (ray1, out hits [1], maxRay1Distance)) {
+				if (hits [1].collider.gameObject.name.Contains ("jalan")) {
+					//Debug.Log ("Hit 1 = " + hits [1].collider.gameObject.name);
+					nextStreet = hits [1].collider.gameObject;
+				} else {
+					//Debug.Log ("Hit 1 = False");
+					nextStreet = null;
+				}
+			}
+		} else {
+			nextStreet = null;
 		}
 	}
 }

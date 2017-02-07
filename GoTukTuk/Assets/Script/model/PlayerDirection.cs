@@ -96,6 +96,24 @@ public class PlayerDirection{
 		}
 	}
 
+	public Vector3 getTargetToward(Vector3 vS, Vector3 vT){
+		if (this.currentDirection == 0) {
+			if (this.getTargetDirection () == direction [1, 0] || this.getTargetDirection () == direction [1, 2]) {
+				//Debug.Log("x");
+				vS.x = vT.x;
+			} else if (this.getTargetDirection () == direction [1, 1] || this.getTargetDirection () == direction [1, 3]) {
+				vS.z = vT.z;
+			}
+		} else if (this.currentDirection == 1) {
+			if (this.getTargetDirection () == direction [0, 0] || this.getTargetDirection () == direction [0, 2]) {
+				vS.z = vT.z;
+			} else if (this.getTargetDirection () == direction [0, 1] || this.getTargetDirection () == direction [0, 3]) {
+				vS.x = vT.x;
+			} 
+		}
+		return vS;
+	}
+
 	private int limit(int value, int start, int end){
 		int range = end - start + 1;
 		Debug.Log ("Range  = " + range);
@@ -105,6 +123,17 @@ public class PlayerDirection{
 			return value + Math.Abs(((value - end) / range) * range);
 		} else{
 			return value;
+		}
+	}
+
+	public bool isSame(float firstValue, float secondValue, float tolerance){
+		firstValue = Mathf.RoundToInt (firstValue);
+		secondValue = Mathf.RoundToInt (secondValue);
+		tolerance = Mathf.RoundToInt (tolerance);
+		if (firstValue < secondValue + (tolerance / 2) || firstValue > secondValue - (tolerance / 2)) {
+			return true;
+		} else {
+			return false;
 		}
 	}
 }
