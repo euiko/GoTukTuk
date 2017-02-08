@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114160007293236270}
   - component: {fileID: 114653574345464794}
   - component: {fileID: 114481110621882492}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: jalanBelokKiri
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,8 +187,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1136837063626602}
-  m_LocalRotation: {x: -0.50000006, y: -0.4999999, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 47.17199, y: -6.2418985, z: -34.700706}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 53.972347, y: 0.052603245, z: -13.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4592607478690352}
@@ -196,7 +196,7 @@ Transform:
   - {fileID: 4661382431651452}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!23 &23132601049745308
 MeshRenderer:
   m_ObjectHideFlags: 1

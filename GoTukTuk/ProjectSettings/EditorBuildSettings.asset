@@ -8,6 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Menu/HomeScreen1.unity
   - enabled: 1
+    path: Assets/Scene/Menu/Pausepopup.unity
+  - enabled: 1
     path: Assets/Scene/Menu/StageBandung.unity
   - enabled: 1
     path: Assets/Scene/Menu/StageJakarta.unity

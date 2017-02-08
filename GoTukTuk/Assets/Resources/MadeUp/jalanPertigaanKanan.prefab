@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 114427095986535238}
   - component: {fileID: 114542367619912150}
   - component: {fileID: 114900662392103702}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: jalanPertigaanKanan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,8 +174,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1889905537272530}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -0.16889858, y: 0.052603245, z: -13.236448}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: 0.7071068, w: 0}
+  m_LocalPosition: {x: 53.87456, y: 0.1, z: 22.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4259202205675558}
@@ -183,7 +183,7 @@ Transform:
   - {fileID: 4800622076967318}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 180}
 --- !u!4 &4800622076967318
 Transform:
   m_ObjectHideFlags: 1

@@ -54,6 +54,7 @@
      <Compile Include="Assets\Script\Controller\GameController.cs" />
      <Compile Include="Assets\Script\Controller\StreetController.cs" />
      <Compile Include="Assets\Script\Controller\TandaController.cs" />
+     <Compile Include="Assets\Script\Menu\ExitButton.cs" />
      <Compile Include="Assets\Script\Menu\Menu.cs" />
      <Compile Include="Assets\Script\Menu\MenuManager.cs" />
      <Compile Include="Assets\Script\Menu\SceneLoader.cs" />
