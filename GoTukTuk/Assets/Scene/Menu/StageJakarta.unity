@@ -706,9 +706,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 766577678}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b444b8865ed635b4482c2b7e11a871da, type: 3}
+  m_Script: {fileID: 11500000, guid: 0be9cbf60d9567c43bf5fd6136636709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: {fileID: 102900000, guid: 6430858be57f5b04b81a53ac49400958, type: 3}
 --- !u!1 &872952285
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,8 +1335,8 @@ GameObject:
   - component: {fileID: 1975348747}
   - component: {fileID: 1975348746}
   - component: {fileID: 1975348745}
-  - component: {fileID: 1975348744}
   - component: {fileID: 1975348748}
+  - component: {fileID: 1975348744}
   m_Layer: 0
   m_Name: BackToStage
   m_TagString: Untagged
@@ -1369,9 +1370,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1975348742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c4e99eeec834b74da2a68b80c0dcbd8, type: 3}
+  m_Script: {fileID: 11500000, guid: 0be9cbf60d9567c43bf5fd6136636709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: {fileID: 102900000, guid: 77d4c15a648870145af7a05c5a9918f0, type: 3}
 --- !u!114 &1975348745
 MonoBehaviour:
   m_ObjectHideFlags: 0

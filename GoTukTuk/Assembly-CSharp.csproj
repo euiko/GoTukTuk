@@ -47,21 +47,23 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\BajaiRaycast.cs" />
-     <Compile Include="Assets\Script\BajajController.cs" />
      <Compile Include="Assets\Script\BajajCreator.cs" />
-     <Compile Include="Assets\Script\Menu\BackToStage.cs" />
-     <Compile Include="Assets\Script\Menu\ButtonBackToMainMenu.cs" />
+     <Compile Include="Assets\Script\Controller\BajajController.cs" />
+     <Compile Include="Assets\Script\Controller\ButtonController.cs" />
+     <Compile Include="Assets\Script\Controller\ButtonPlayController.cs" />
+     <Compile Include="Assets\Script\Controller\GameController.cs" />
+     <Compile Include="Assets\Script\Controller\StreetController.cs" />
+     <Compile Include="Assets\Script\Controller\TandaController.cs" />
      <Compile Include="Assets\Script\Menu\Menu.cs" />
      <Compile Include="Assets\Script\Menu\MenuManager.cs" />
-     <Compile Include="Assets\Script\Menu\StageLevelBandung.cs" />
-     <Compile Include="Assets\Script\Menu\StageLevelJakarta.cs" />
-     <Compile Include="Assets\Script\Menu\StageLevelJogja.cs" />
-     <Compile Include="Assets\Script\Menu\StageLevelSby.cs" />
-     <Compile Include="Assets\Script\Menu\playButton.cs" />
+     <Compile Include="Assets\Script\Menu\SceneLoader.cs" />
      <Compile Include="Assets\Script\Menu\soundButton.cs" />
-     <Compile Include="Assets\Script\Menu\start.cs" />
-     <Compile Include="Assets\Script\model\PlayerDirection.cs" />
-     <Compile Include="Assets\Script\model\StreetProp.cs" />
+     <Compile Include="Assets\Script\Model\ButtonModel.cs" />
+     <Compile Include="Assets\Script\Model\ButtonProp.cs" />
+     <Compile Include="Assets\Script\Model\GameModel.cs" />
+     <Compile Include="Assets\Script\Model\GameProp.cs" />
+     <Compile Include="Assets\Script\Model\PlayerDirection.cs" />
+     <Compile Include="Assets\Script\Model\StreetProp.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

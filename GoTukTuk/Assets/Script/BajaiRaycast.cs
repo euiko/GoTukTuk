@@ -42,7 +42,7 @@ public class BajaiRaycast : MonoBehaviour {
 				Debug.Log ("ini Jalan");
 				if (!go.GetComponent<StreetProp> ().isCommandExecuted) {
 					Debug.Log (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1)) + " - " + Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position)));
-					if (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1)) == Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position))) {
+					if (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1)) + 3 == Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position))) {
 						Debug.Log ("position = true");
 						if (go.GetComponent<StreetProp> ().turnListener (StreetProp.command.turnRight)) {
 							BajajController.cmd [0] = true;
