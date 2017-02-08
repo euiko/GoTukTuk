@@ -60,6 +60,10 @@
      <Compile Include="Assets\Script\Menu\StageLevelSby.cs" />
      <Compile Include="Assets\Script\Menu\playButton.cs" />
      <Compile Include="Assets\Script\Menu\soundButton.cs" />
+<<<<<<< HEAD
+=======
+     <Compile Include="Assets\Script\Menu\start.cs" />
+>>>>>>> 49eb937f2af20d7cf5d268a794eacb571623d095
      <Compile Include="Assets\Script\model\PlayerDirection.cs" />
      <Compile Include="Assets\Script\model\StreetProp.cs" />
  <Reference Include="UnityEngine.UI">

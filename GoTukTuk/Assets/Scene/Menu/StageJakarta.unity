@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657886, g: 0.4964127, b: 0.5748172, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -598,6 +598,7 @@ GameObject:
   - component: {fileID: 766577682}
   - component: {fileID: 766577681}
   - component: {fileID: 766577680}
+  - component: {fileID: 766577683}
   m_Layer: 0
   m_Name: JktLvl1
   m_TagString: Untagged
@@ -697,6 +698,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 766577678}
+--- !u!114 &766577683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 766577678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b444b8865ed635b4482c2b7e11a871da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &872952285
 GameObject:
   m_ObjectHideFlags: 0

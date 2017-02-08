@@ -114,6 +114,32 @@ public class PlayerDirection{
 		return vS;
 	}
 
+	public Vector3 getRaycastPosition(Vector3 vS, int inc){
+		if (this.currentDirection == 0) {
+			if (this.getTargetDirection () == direction [1, 0]) {
+				//Debug.Log("x");
+				vS.x = vS.x + inc;
+			}else if(this.getTargetDirection () == direction [1, 2]){
+				vS.x = vS.x - inc;
+			} else if (this.getTargetDirection () == direction [1, 1]) {
+				vS.z = vS.z - inc;
+			}else if(this.getTargetDirection () == direction [1, 3]){
+				vS.z = vS.z + inc;
+			}
+		} else if (this.currentDirection == 1) {
+			if (this.getTargetDirection () == direction [0, 0]) {
+				vS.z = vS.z + inc;
+			} else if (this.getTargetDirection () == direction [0, 2]) {
+				vS.z = vS.z - inc;
+			} else if (this.getTargetDirection () == direction [0, 1]) {
+				vS.x = vS.x + inc;
+			} else if (this.getTargetDirection () == direction [0, 3]) {
+				vS.x = vS.x - inc;
+			}
+		}
+		return vS;
+	}
+
 	private int limit(int value, int start, int end){
 		int range = end - start + 1;
 		Debug.Log ("Range  = " + range);
