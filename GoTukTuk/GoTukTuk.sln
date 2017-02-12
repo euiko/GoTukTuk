@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoTukTuk", "Assembly-CSharp.csproj", "{596F1BC7-61D6-D8A8-34EE-946ADC68E697}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoTukTuk", "Assembly-CSharp-Editor.csproj", "{70265946-6824-75D9-0151-8DF2038BF002}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{596F1BC7-61D6-D8A8-34EE-946ADC68E697}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{596F1BC7-61D6-D8A8-34EE-946ADC68E697}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{596F1BC7-61D6-D8A8-34EE-946ADC68E697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70265946-6824-75D9-0151-8DF2038BF002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70265946-6824-75D9-0151-8DF2038BF002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70265946-6824-75D9-0151-8DF2038BF002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70265946-6824-75D9-0151-8DF2038BF002}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

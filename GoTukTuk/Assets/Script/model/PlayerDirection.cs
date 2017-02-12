@@ -57,7 +57,7 @@ public class PlayerDirection{
 	}
 
 	public int getSpeed(){
-		return this.speed;
+		return (int)(this.speed * Time.deltaTime);
 	}
 
 	public int getNextDirection(){
@@ -96,19 +96,50 @@ public class PlayerDirection{
 		}
 	}
 
+	public float getDirectionAxis(Vector3 v, int inc){
+		if (this.currentDirection == 0) {
+			if (this.getTargetDirection () == direction [1, 0]) {
+				//Debug.Log("x");
+				return v.x + inc;
+			} else if (this.getTargetDirection () == direction [1, 2]) {
+				return v.x - inc;
+			} else if (this.getTargetDirection () == direction [1, 1]) {
+				return v.z - inc;
+			} else if (this.getTargetDirection () == direction [1, 3]) {
+				return v.z + inc;
+			} else {
+				return 0;
+			}
+		} else if (this.currentDirection == 1) {
+			if (this.getTargetDirection () == direction [0, 0]) {
+				return v.z + inc;
+			} else if (this.getTargetDirection () == direction [0, 2]) {
+				return v.z - inc;
+			} else if (this.getTargetDirection () == direction [0, 1]) {
+				return v.x + inc;
+			} else if (this.getTargetDirection () == direction [0, 3]) {
+				return v.x - inc;
+			} else {
+				return 0;
+			}
+		} else {
+			return 0;
+		}
+	}
+
 	public Vector3 getTargetToward(Vector3 vS, Vector3 vT){
 		if (this.currentDirection == 0) {
 			if (this.getTargetDirection () == direction [1, 0] || this.getTargetDirection () == direction [1, 2]) {
 				//Debug.Log("x");
-				vS.x = vT.x;
-			} else if (this.getTargetDirection () == direction [1, 1] || this.getTargetDirection () == direction [1, 3]) {
 				vS.z = vT.z;
+			} else if (this.getTargetDirection () == direction [1, 1] || this.getTargetDirection () == direction [1, 3]) {
+				vS.x = vT.x;
 			}
 		} else if (this.currentDirection == 1) {
 			if (this.getTargetDirection () == direction [0, 0] || this.getTargetDirection () == direction [0, 2]) {
-				vS.z = vT.z;
-			} else if (this.getTargetDirection () == direction [0, 1] || this.getTargetDirection () == direction [0, 3]) {
 				vS.x = vT.x;
+			} else if (this.getTargetDirection () == direction [0, 1] || this.getTargetDirection () == direction [0, 3]) {
+				vS.z = vT.z;
 			} 
 		}
 		return vS;
@@ -153,10 +184,8 @@ public class PlayerDirection{
 	}
 
 	public bool isSame(float firstValue, float secondValue, float tolerance){
-		firstValue = Mathf.RoundToInt (firstValue);
-		secondValue = Mathf.RoundToInt (secondValue);
-		tolerance = Mathf.RoundToInt (tolerance);
-		if (firstValue < secondValue + (tolerance / 2) || firstValue > secondValue - (tolerance / 2)) {
+		float halfTolerance = tolerance / 2;
+		if (firstValue < secondValue + halfTolerance && firstValue > secondValue - halfTolerance) {
 			return true;
 		} else {
 			return false;
