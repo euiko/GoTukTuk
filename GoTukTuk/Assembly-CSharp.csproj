@@ -39,10 +39,10 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -57,8 +57,10 @@
      <Compile Include="Assets\Script\Menu\ExitButton.cs" />
      <Compile Include="Assets\Script\Menu\Menu.cs" />
      <Compile Include="Assets\Script\Menu\MenuManager.cs" />
+     <Compile Include="Assets\Script\Menu\Pause.cs" />
      <Compile Include="Assets\Script\Menu\SceneLoader.cs" />
      <Compile Include="Assets\Script\Menu\soundButton.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Script\Model\ButtonModel.cs" />
      <Compile Include="Assets\Script\Model\ButtonProp.cs" />
      <Compile Include="Assets\Script\Model\GameModel.cs" />
@@ -88,23 +90,31 @@
      <Compile Include="Assets\mobile_touch_camera\scripts\tools\FocusCameraOnItem.cs" />
      <Compile Include="Assets\mobile_touch_camera\scripts\tools\SetBoundaryFromCollider.cs" />
      <None Include="Assets\SimpleTown\Changelog.txt" />
+=======
+     <Compile Include="Assets\Script\model\ButtonModel.cs" />
+     <Compile Include="Assets\Script\model\ButtonProp.cs" />
+     <Compile Include="Assets\Script\model\GameModel.cs" />
+     <Compile Include="Assets\Script\model\GameProp.cs" />
+     <Compile Include="Assets\Script\model\PlayerDirection.cs" />
+     <Compile Include="Assets\Script\model\StreetProp.cs" />
+>>>>>>> 9697086ef9d02087783b4c21caaedec12d0f6e90
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.PlaymodeTestsRunner">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
