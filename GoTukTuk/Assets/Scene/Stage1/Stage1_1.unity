@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657886, g: 0.4964127, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -919,11 +919,11 @@ MonoBehaviour:
   cameraAxes: 1
   perspectiveZoomMode: 1
   camZoomMin: 5
-  camZoomMax: 100
+  camZoomMax: 80
   camOverzoomMargin: 3
   camOverdragMargin: 5
   boundaryMin: {x: -381.79688, y: -100}
-  boundaryMax: {x: -192.34375, y: 118.3125}
+  boundaryMax: {x: -192.34375, y: 89.265625}
   camFollowFactor: 15
   autoScrollDampMode: 0
   autoScrollDamp: 300
@@ -954,7 +954,7 @@ MonoBehaviour:
   groundLevelOffset: 0
   enableRotation: 1
   enableTilt: 1
-  tiltAngleMin: 45
+  tiltAngleMin: 40
   tiltAngleMax: 90
   enableZoomTilt: 0
   zoomTiltAngleMin: 45
