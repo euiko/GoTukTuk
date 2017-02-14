@@ -1,13 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour {
 
-	public SceneAsset scene;
+	public string sceneName;
 
 	void Start () {
 		GetComponent<Button>().onClick.AddListener(onClick);
@@ -15,10 +14,10 @@ public class SceneLoader : MonoBehaviour {
 
 	void onClick()
 	{
-		changeSceneTo (scene);
+		changeSceneTo (sceneName);
 	}
 
-	public void changeSceneTo(SceneAsset sceneAsset){
-		SceneManager.LoadScene (sceneAsset.name);
+	public void changeSceneTo(string sceneName){
+		SceneManager.LoadScene (sceneName);
 	}
 }

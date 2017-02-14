@@ -777,7 +777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0be9cbf60d9567c43bf5fd6136636709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: {fileID: 102900000, guid: 77d4c15a648870145af7a05c5a9918f0, type: 3}
+  sceneName: StageMenu
 --- !u!114 &667318122
 MonoBehaviour:
   m_ObjectHideFlags: 0
