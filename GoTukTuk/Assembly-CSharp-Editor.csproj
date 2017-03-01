@@ -51,6 +51,7 @@
      <Compile Include="Assets\mobile_touch_camera\editor\MobileTouchCameraEditor.cs" />
      <Compile Include="Assets\mobile_touch_camera\editor\TouchInputControllerEditor.cs" />
      <None Include="Assets\SimpleTown\Changelog.txt" />
+     <None Include="Assets\BMA&apos;s Low Poly Trees\Thanks.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>

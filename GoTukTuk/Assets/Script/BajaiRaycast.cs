@@ -44,6 +44,10 @@ public class BajaiRaycast : MonoBehaviour {
 					//Debug.Log (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1)) + " - " + Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position)));
 					if (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1,3)) == Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position))) {
 						//Debug.Log ("position = true");
+						if(go.GetComponent<StreetProp> ().streetType == StreetProp.type.finish){
+							GameController.gameModel.IsFinished = true;
+						}
+
 						if (go.GetComponent<StreetProp> ().turnListener (StreetProp.command.turnRight)) {
 							BajajController.cmd [0] = true;
 						} else if (go.GetComponent<StreetProp> ().turnListener (StreetProp.command.turnLeft)) {
