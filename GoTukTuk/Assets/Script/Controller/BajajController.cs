@@ -82,10 +82,10 @@ public class BajajController : MonoBehaviour {
 			case 0:
 				curAngle += playerDirection.getSpeed ();
 				transform.RotateAround (TireBR.transform.position, Vector3.up, playerDirection.getSpeed ());
-				if (playerDirection.isSame(transform.eulerAngles.y, playerDirection.getTargetDirection(), playerDirection.getSpeed() * 2)) {
+				if (playerDirection.isSame(transform.eulerAngles.y, playerDirection.getTargetDirection(), playerDirection.getSpeed() * 4)) {
 					curAngle = playerDirection.getTargetDirection () == 360? 0:playerDirection.getTargetDirection();
 					//Debug.Log (curAngle);
-					transform.rotation = Quaternion.Euler (0, curAngle, 0);
+					//transform.rotation = Quaternion.Euler (0, curAngle, 0);
 					state = false;
 					onTurn = false;
 					isCentered = false;
@@ -94,10 +94,10 @@ public class BajajController : MonoBehaviour {
 			case 1:
 				curAngle -= playerDirection.getSpeed ();
 				transform.RotateAround (TireBL.transform.position, Vector3.up, -(playerDirection.getSpeed ()));
-				if (playerDirection.isSame(transform.eulerAngles.y, playerDirection.getTargetDirection(), playerDirection.getSpeed() * 2)) {
+				if (playerDirection.isSame(transform.eulerAngles.y, playerDirection.getTargetDirection(), playerDirection.getSpeed() * 4)) {
 					curAngle = playerDirection.getTargetDirection () == 360? 0:playerDirection.getTargetDirection();
 					//Debug.Log (curAngle);
-					transform.rotation = Quaternion.Euler (0, curAngle, 0);
+					//transform.rotation = Quaternion.Euler (0, curAngle, 0);
 					state = false;
 					onTurn = false;
 					isCentered = false;
@@ -148,7 +148,7 @@ public class BajajController : MonoBehaviour {
 //		Debug.Log (transform.localRotation.y + " - " + angle);
 		float doubleTolerance = playerDirection.getSpeed() * 2;
 		float halfSpeed = playerDirection.getSpeed () / 2;
-		if(!(playerDirection.isSame(transform.eulerAngles.y, angle, doubleTolerance) || playerDirection.isSame(transform.eulerAngles.y, 360, playerDirection.getSpeed())) && !onTurn){
+		if(!(playerDirection.isSame(transform.eulerAngles.y, angle, doubleTolerance) || playerDirection.isSame(transform.eulerAngles.y, 360, doubleTolerance)) && !onTurn){
 			Debug.Log ("Nggak lurus = " + doubleTolerance + " : " + transform.eulerAngles.y + " - " + angle);
 			if (angle != 0) {
 				if (transform.eulerAngles.y > angle + doubleTolerance) {

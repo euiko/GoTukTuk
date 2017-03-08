@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class StreetController : MonoBehaviour {
 
 	void OnMouseDown(){
+		Debug.Log (GetComponent<StreetProp>().getCurCommandFrom());
+
 		if (ButtonController.buttonModel.getIsActive ()) {
 			if (ButtonController.buttonModel.buttonListener (ButtonModel.type.direction)) {
 				GetComponent<StreetProp> ().cmd = StreetProp.command.turnRight;

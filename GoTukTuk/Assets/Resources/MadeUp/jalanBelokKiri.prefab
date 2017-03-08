@@ -359,7 +359,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c7a371712eb64cae562198162aedc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fromUp: 0
+  fromRight: 0
+  fromDown: 1
+  fromLeft: 1
   cmd: 0
+  cmdFrom: 0
   streetType: 0
   isCommandExecuted: 0
 --- !u!114 &114653574345464794
