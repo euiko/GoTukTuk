@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657886, g: 0.4964127, b: 0.5748172, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -739,8 +739,8 @@ GameObject:
   - component: {fileID: 667318124}
   - component: {fileID: 667318123}
   - component: {fileID: 667318122}
-  - component: {fileID: 667318121}
   - component: {fileID: 667318125}
+  - component: {fileID: 667318121}
   m_Layer: 0
   m_Name: BackToStage
   m_TagString: Untagged
@@ -774,9 +774,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 667318119}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c4e99eeec834b74da2a68b80c0dcbd8, type: 3}
+  m_Script: {fileID: 11500000, guid: 0be9cbf60d9567c43bf5fd6136636709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: StageMenu
 --- !u!114 &667318122
 MonoBehaviour:
   m_ObjectHideFlags: 0

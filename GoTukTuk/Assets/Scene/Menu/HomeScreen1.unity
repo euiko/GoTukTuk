@@ -444,6 +444,7 @@ GameObject:
   - component: {fileID: 1165094535}
   - component: {fileID: 1165094534}
   - component: {fileID: 1165094537}
+  - component: {fileID: 1165094538}
   m_Layer: 5
   m_Name: ButtonExit
   m_TagString: Untagged
@@ -560,6 +561,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1165094538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1165094532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ba78ee47f89fea479e1674c2bed0e32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1186136419
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,8 +681,8 @@ GameObject:
   - component: {fileID: 1445654614}
   - component: {fileID: 1445654613}
   - component: {fileID: 1445654616}
-  - component: {fileID: 1445654617}
   - component: {fileID: 1445654618}
+  - component: {fileID: 1445654617}
   m_Layer: 5
   m_Name: ButtonPlay
   m_TagString: Untagged
@@ -795,9 +807,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1445654611}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e85837997ec72d46850c37dc1d10bd5, type: 3}
+  m_Script: {fileID: 11500000, guid: 0be9cbf60d9567c43bf5fd6136636709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: StageMenu
 --- !u!123 &1445654618
 LensFlare:
   m_ObjectHideFlags: 0

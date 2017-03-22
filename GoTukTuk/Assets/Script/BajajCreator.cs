@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class BajajCreator : MonoBehaviour {
 
-	public GameObject gameObject;
-
 	// Use this for initialization
 	void Start () {
-		Vector3 v = transform.position;
-		v.y -= 2;
-		v.z -= 6;
-		Instantiate(gameObject, v, Quaternion.identity);
+		GameObject go = Resources.Load ("MadeUp/bajai_jadi_texturetest_animasi", typeof(GameObject)) as GameObject;
+		if (transform.GetComponent<StreetProp>().streetType == StreetProp.type.start) {
+			Vector3 v = transform.position;
+			v.z -= 3;
+			Instantiate(go, v, Quaternion.identity);
+		}
 	}
 	
 	// Update is called once per frame
