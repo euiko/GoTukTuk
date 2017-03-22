@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:GoTukTuk/Assets/Resources/Materials/atap istana.mat.meta
 guid: feb930a632508b7459b676b252b1d0ef
 timeCreated: 1490155231
+=======
+guid: cdca156b948d9ce4fb0b8219cf44299c
+timeCreated: 1488945280
+>>>>>>> 35dd8cabec62e34edf859d4763707875ea06d89f:GoTukTuk/Assets/Resources/Raw/Materials/kepala.mat.meta
 licenseType: Free
 NativeFormatImporter:
   userData: 
