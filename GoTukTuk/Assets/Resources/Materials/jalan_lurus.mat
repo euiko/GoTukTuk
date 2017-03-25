@@ -105,7 +105,7 @@ Material:
       second: 0.02
     - first:
         name: _Shininess
-      second: 0.078125
+      second: 0.4
     - first:
         name: _SmoothnessTextureChannel
       second: 0

@@ -12,6 +12,8 @@ public class StreetProp : MonoBehaviour {
 	public commandFrom cmdFrom;
 	public type streetType;
 	public bool isCommandExecuted = false;
+	private bool _isOnAction;
+	private bool _isLeft;
 
 	void Awake(){
 		if (fromDown) {
@@ -23,6 +25,16 @@ public class StreetProp : MonoBehaviour {
 		}else if (fromRight) {
 			this.cmdFrom = commandFrom.right;
 		}
+	}
+
+	public bool isLeft{
+		get{ return this._isLeft; }
+		set{ this._isLeft = value; }
+	}
+
+	public bool isOnAction {
+		get{ return this._isOnAction; }
+		set{ this._isOnAction = value; }
 	}
 
 	public bool turnListener(command cmd){

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class GameModel{
 
-	private bool isStarted;
+	private bool isStarted = false;
 	private bool isFinished;
 	private bool isPaused;
 	private bool isGameOver;
@@ -12,7 +12,7 @@ public class GameModel{
 		get{ return this.isStarted;}
 		set{ 
 			this.isStarted = value;
-		}
+		}		
 	}
 
 	public bool IsFinished {

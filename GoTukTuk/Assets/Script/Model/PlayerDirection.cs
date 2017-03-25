@@ -173,7 +173,7 @@ public class PlayerDirection{
 
 	private int limit(int value, int start, int end){
 		int range = end - start + 1;
-		Debug.Log ("Range  = " + range);
+		//Debug.Log ("Range  = " + range);
 		if (value > end) {
 			return value - (value / range) * range;
 		} else if (value < start) {
