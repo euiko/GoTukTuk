@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: SimpleTown
-  m_Shader: {fileID: 10703, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 10705, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -114,7 +114,7 @@ Material:
       second: 0.02
     - first:
         name: _Shininess
-      second: 0.169
+      second: 0.7
     - first:
         name: _SmoothnessTextureChannel
       second: 0

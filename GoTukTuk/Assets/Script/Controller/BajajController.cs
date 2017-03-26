@@ -41,7 +41,6 @@ public class BajajController : MonoBehaviour {
 	void FixedUpdate(){
 		if (GameController.gameModel.IsStarted) {
 			this.speed = 0.2f;
-			GameController.gameModel.IsStarted = false;
 		}
 		TireBL.motorTorque = maxTorque * speed;
 		TireBR.motorTorque = maxTorque * speed;

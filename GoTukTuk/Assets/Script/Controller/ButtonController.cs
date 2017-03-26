@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour{
 
-	public static ButtonModel buttonModel = new ButtonModel();
 
 	public ButtonModel.type buttonType;
 
@@ -14,8 +13,12 @@ public class ButtonController : MonoBehaviour{
 	}
 
 	void onClick(){
-		buttonModel.setButtonType(this.buttonType);
-		buttonModel.setActive();
+		if (GameController.gameModel.IsStarted == false) {
+			ButtonProp.buttonModel.ButtonType = this.buttonType;
+			ButtonProp.buttonModel.setActive ();
+		}
+
+		Debug.Log (GameController.gameModel.IsStarted);
 	}
 
 }
