@@ -3,16 +3,22 @@
     <String>Assembly-CSharp-Editor.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Controller\TandaController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Controller\GameController.cs">
     <Files>
       <File FileName="Assets\Script\Controller\ButtonController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Controller\ButtonPlayController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Controller\BajajController.cs" Line="128" Column="36" />
-      <File FileName="Assets\Script\Controller\TandaController.cs" Line="70" Column="39" />
-      <File FileName="Assets\Script\BajaiRaycast.cs" Line="69" Column="53" />
-      <File FileName="Assets\Script\Model\StreetProp.cs" Line="16" Column="23" />
-      <File FileName="Assets\SuperLevelOptimizer\Tutorial\Tutorial.txt" Line="12" Column="35" />
-      <File FileName="Assets\Script\Controller\GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Controller\ButtonPlayController.cs" Line="15" Column="83" />
+      <File FileName="Assets\Script\Controller\BajajController.cs" Line="195" Column="75" />
+      <File FileName="Assets\Script\Controller\TandaController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\BajaiRaycast.cs" Line="48" Column="59" />
+      <File FileName="Assets\Script\Controller\GameController.cs" Line="23" Column="18" />
+      <File FileName="Assets\Script\Menu\Pause.cs" Line="22" Column="74" />
+      <File FileName="Assets\Script\Model\GameProp.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Model\GameModel.cs" Line="17" Column="33" />
+      <File FileName="Assets\Script\Spawner.cs" Line="47" Column="163" />
+      <File FileName="Assets\Script\Model\PlayerDirection.cs" Line="6" Column="79" />
+      <File FileName="Assets\Script\Controller\StarController.cs" Line="18" Column="24" />
+      <File FileName="Assets\Script\Controller\StreetController.cs" Line="16" Column="23" />
+      <File FileName="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\TransitionHelper.cs" Line="285" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

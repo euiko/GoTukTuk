@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64867082165840272}
+  - component: {fileID: 65665626079788980}
   m_Layer: 0
   m_Name: Env_Beach_Short
   m_TagString: Untagged
@@ -80,8 +80,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!64 &64867082165840272
-MeshCollider:
+--- !u!65 &65665626079788980
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -90,7 +90,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 4a1c3fef02cc5ea4aa77b09cc2d56572, type: 3}
+  m_Size: {x: 5, y: 2.999999, z: 20}
+  m_Center: {x: -2.5, y: -1.4999995, z: -10}

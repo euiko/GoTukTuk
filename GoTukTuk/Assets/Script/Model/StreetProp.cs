@@ -11,9 +11,9 @@ public class StreetProp : MonoBehaviour {
 	public command cmd;
 	public commandFrom cmdFrom;
 	public type streetType;
-	public bool isCommandExecuted = false;
+	public bool isCommandExecuted = false, isContainStar;
 	private bool _isOnAction;
-	private bool _isLeft;
+	private bool _isLeftFromRoad;
 
 	void Awake(){
 		if (fromDown) {
@@ -27,9 +27,9 @@ public class StreetProp : MonoBehaviour {
 		}
 	}
 
-	public bool isLeft{
-		get{ return this._isLeft; }
-		set{ this._isLeft = value; }
+	public bool isLeftFromRoad{
+		get{ return this._isLeftFromRoad; }
+		set{ this._isLeftFromRoad = value; }
 	}
 
 	public bool isOnAction {

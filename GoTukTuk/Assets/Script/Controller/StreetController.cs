@@ -9,7 +9,7 @@ public class StreetController : MonoBehaviour {
 	void OnMouseDown(){
 		//Debug.Log (GetComponent<StreetProp>().getCurCommandFrom());
 		GetComponent<StreetProp>().getCurCommandFrom();
-		if (!GameController.gameModel.IsStarted) {
+		if (!GameController.gameModel.IsStarted && !GameController.gameModel.IsPaused) {
 			if (ButtonProp.buttonModel.ButtonType == ButtonModel.type.direction) {
 				if (ButtonProp.buttonModel.getIsActive ()) {
 					GetComponent<StreetProp> ().cmd = StreetProp.command.turnRight;

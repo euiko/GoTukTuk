@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64702402381661192}
+  - component: {fileID: 64877904717016366}
   m_Layer: 0
   m_Name: Prop_Roadsign_01
   m_TagString: Untagged
@@ -80,7 +80,7 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!64 &64702402381661192
+--- !u!64 &64877904717016366
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64083494296289224}
+  - component: {fileID: 65749520773762774}
   m_Layer: 0
   m_Name: Env_Seawall_Corner_01
   m_TagString: Untagged
@@ -80,8 +80,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!64 &64083494296289224
-MeshCollider:
+--- !u!65 &65749520773762774
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -90,7 +90,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: b49adb7c480685f4d967ad89a3ad1386, type: 3}
+  m_Size: {x: 5, y: 3.0000002, z: 19.999998}
+  m_Center: {x: -2.5, y: -1.4999994, z: -9.999999}

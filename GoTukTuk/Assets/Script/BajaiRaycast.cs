@@ -44,35 +44,43 @@ public class BajaiRaycast : MonoBehaviour {
 				currentStreet = hit2.collider.gameObject;
 				if (beforeCurrentStreet == null)
 					beforeCurrentStreet = currentStreet;
-				//Debug.Log ("ini Jalan");
-				if (!go.GetComponent<StreetProp> ().isCommandExecuted) {
-					if (beforeCurrentStreet.name != currentStreet.name) {
-						willExecuteCurrentCommand = false;
-						if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.down && isLessThan (v1.z, go.transform.position.z, minVal)) {
-							willExecuteCurrentCommand = true;
-						}else if(go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.left && isLessThan (v1.x, go.transform.position.x, minVal)){
-							willExecuteCurrentCommand = true;
-						}else if(go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.up && isGreaterThan (v1.z, go.transform.position.z, minVal)){
-							willExecuteCurrentCommand = true;
-						}else if(go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.right && isGreaterThan (v1.x, go.transform.position.x, minVal)){
-							willExecuteCurrentCommand = true;
-						}
-					}
-					//Debug.Log (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1)) + " - " + Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position)));
-					if (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1,3)) == Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position))) {
-						//Debug.Log ("position = true");
-						if (willExecuteCurrentCommand) {
-							if(go.GetComponent<StreetProp> ().streetType == StreetProp.type.finish){
-								GameController.gameModel.IsFinished = true;
-							}
-							turnBajaj (go);
-							go.GetComponent<StreetProp> ().isLeft = true;
-							go.GetComponent<StreetProp> ().isCommandExecuted = true;
-						}
-					}
-					beforeCurrentStreet = currentStreet;
-				}
 
+				if (beforeCurrentStreet.name != currentStreet.name && (currentStreet.GetComponent<StreetProp> ().streetType == StreetProp.type.finish || currentStreet.GetComponent<StreetProp> ().isContainStar))
+					StarController.collectingStar = true;
+
+				if (currentStreet.GetComponent<StreetProp> ().streetType == StreetProp.type.finish) {
+					GameController.gameModel.isAction = true;
+					GameController.gameModel.IsFinished = true;
+				} else {
+					//Debug.Log ("ini Jalan");
+					if (!go.GetComponent<StreetProp> ().isCommandExecuted) {
+						if (beforeCurrentStreet.name != currentStreet.name) {
+							willExecuteCurrentCommand = false;
+							if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.down && isLessThan (v1.z, go.transform.position.z, minVal)) {
+								willExecuteCurrentCommand = true;
+							} else if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.left && isLessThan (v1.x, go.transform.position.x, minVal)) {
+								willExecuteCurrentCommand = true;
+							} else if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.up && isGreaterThan (v1.z, go.transform.position.z, minVal)) {
+								willExecuteCurrentCommand = true;
+							} else if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.right && isGreaterThan (v1.x, go.transform.position.x, minVal)) {
+								willExecuteCurrentCommand = true;
+							}
+						}
+						//Debug.Log (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1)) + " - " + Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position)));
+						if (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1, 3)) == Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position))) {
+							//Debug.Log ("position = true");
+							if (willExecuteCurrentCommand) {
+								if (go.GetComponent<StreetProp> ().streetType == StreetProp.type.finish) {
+									GameController.gameModel.IsFinished = true;
+								}
+								turnBajaj (go);
+								go.GetComponent<StreetProp> ().isLeftFromRoad = true;
+								go.GetComponent<StreetProp> ().isCommandExecuted = true;
+							}
+						}
+						beforeCurrentStreet = currentStreet;
+					}
+				}
 			} else {
 				currentStreet = null;
 			}

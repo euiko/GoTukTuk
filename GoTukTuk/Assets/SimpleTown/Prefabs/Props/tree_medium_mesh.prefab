@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64264436252039044}
+  - component: {fileID: 65973488221582314}
   m_Layer: 0
   m_Name: tree_medium_mesh
   m_TagString: Untagged
@@ -27,13 +27,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.00000071259484, y: -0.70380265, z: 0.00000071534305, w: 0.7103956}
+  m_LocalPosition: {x: -110.20001, y: -113.3, z: 200.79999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -89.466, z: 0}
 --- !u!1002 &400001
 EditorExtensionImpl:
   serializedVersion: 6
@@ -95,8 +95,8 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!64 &64264436252039044
-MeshCollider:
+--- !u!65 &65973488221582314
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -105,7 +105,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 6f6fabe37fc14a84aa30a8b65e25dee9, type: 3}
+  m_Size: {x: 2.8263054, y: 4.4480615, z: 3.0102196}
+  m_Center: {x: 0.0000019073489, y: 2.2098782, z: -6.6724084e-13}

@@ -39,9 +39,9 @@ public class PlayerDirection{
 	}
 
 	public void setCurrentDirectionIndex(int value){
-		Debug.Log ("Before :" + value);
+//		Debug.Log ("Before :" + value);
 		this.currentDirectionIndex = limit(value, 0, 3);
-		Debug.Log (this.currentDirectionIndex);
+//		Debug.Log (this.currentDirectionIndex);
 	}
 
 	public int getCurrentDirection(){

@@ -39,9 +39,15 @@ public class TandaController : MonoBehaviour {
 			}
 			go.GetComponent<StreetProp> ().isOnAction = false;
 		}
-		if (go.GetComponent<StreetProp> ().isLeft) {
-
-			go.GetComponent<StreetProp> ().isLeft = false;
+		if (go.GetComponent<StreetProp> ().isLeftFromRoad) {
+			if (go.GetComponent<StreetProp> ().cmd ==  StreetProp.command.turnLeft) {
+				mat = Resources.Load (materials[1,0], typeof(Material)) as Material;
+				transform.GetComponent<Renderer> ().material = mat;
+			} else if (go.GetComponent<StreetProp> ().cmd == StreetProp.command.turnRight) {
+				mat = Resources.Load (materials[1,1], typeof(Material)) as Material;
+				transform.GetComponent<Renderer> ().material = mat;
+			}
+			go.GetComponent<StreetProp> ().isLeftFromRoad = false;
 		}
 	}
 

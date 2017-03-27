@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64128248689402366}
+  - component: {fileID: 65350804257012692}
   m_Layer: 0
   m_Name: hydrant_mesh
   m_TagString: Untagged
@@ -98,8 +98,8 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!64 &64128248689402366
-MeshCollider:
+--- !u!65 &65350804257012692
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -108,7 +108,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: be782bf7166c3da4588eddd3c6a679d8, type: 3}
+  m_Size: {x: 0.7849232, y: 1.5135309, z: 0.7849224}
+  m_Center: {x: 0, y: 0.75366277, z: 0.000000029802322}

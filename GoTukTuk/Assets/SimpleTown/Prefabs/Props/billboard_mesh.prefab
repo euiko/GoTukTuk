@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64050317535600552}
+  - component: {fileID: 65957670662787414}
   m_Layer: 0
   m_Name: billboard_mesh
   m_TagString: Untagged
@@ -98,8 +98,8 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!64 &64050317535600552
-MeshCollider:
+--- !u!65 &65957670662787414
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -108,7 +108,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: fc48e840b8dd60143be5d6a16cee7dfb, type: 3}
+  m_Size: {x: 5.0505877, y: 5.063998, z: 2.2683487}
+  m_Center: {x: 0, y: 2.531999, z: 0}

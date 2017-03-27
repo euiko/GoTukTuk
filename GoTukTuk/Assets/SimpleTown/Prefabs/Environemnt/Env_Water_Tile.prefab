@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64821236017571906}
+  - component: {fileID: 65349229166712194}
   m_Layer: 0
   m_Name: Env_Water_Tile
   m_TagString: Untagged
@@ -80,8 +80,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!64 &64821236017571906
-MeshCollider:
+--- !u!65 &65349229166712194
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -90,7 +90,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 7ddaa1c967b38f2409f7bcb6762c0e20, type: 3}
+  m_Size: {x: 19.999954, y: 0, z: 19.999977}
+  m_Center: {x: -9.999977, y: -3.0000002, z: -9.999989}

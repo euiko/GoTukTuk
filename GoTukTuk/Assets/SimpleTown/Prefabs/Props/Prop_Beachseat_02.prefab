@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64324127629766678}
+  - component: {fileID: 65360290862111746}
   m_Layer: 0
   m_Name: Prop_Beachseat_02
   m_TagString: Untagged
@@ -80,8 +80,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!64 &64324127629766678
-MeshCollider:
+--- !u!65 &65360290862111746
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -90,7 +90,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 31ce5f4a6f749114184bc036ee1f8a8f, type: 3}
+  m_Size: {x: 1.9283944, y: 1.8715377, z: 4.538849}
+  m_Center: {x: 0.000000059604645, y: 0.93576884, z: 0}

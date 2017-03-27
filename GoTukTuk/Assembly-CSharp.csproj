@@ -19,11 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-<<<<<<< HEAD
     <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_1;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT;MOBILE_INPUT</DefineConstants>
-=======
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_1;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
->>>>>>> 35dd8cabec62e34edf859d4763707875ea06d89f
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -43,50 +39,108 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-<<<<<<< HEAD
-      <HintPath>C:/Program Files/Unity5.5/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Program Files/Unity5.5/Editor/Data/Managed/UnityEditor.dll</HintPath>
-=======
-      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>E:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
->>>>>>> 0204b18f18637e71bfc241ca41ee6a25ea3ca848
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\DisplayItem\DisplayItemHelper.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Helper\Perlin.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Helper\TweenMethods.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Shake\Components\ShakeCamera.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Shake\ShakeHelper.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\Components\Camera\AbstractClasses\TransitionCameraBase.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\Components\Camera\FadeCamera.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\Components\Camera\WipeCamera.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\Components\GameObject\AbstractClasses\TransitionGameObjectBase.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\Components\GameObject\TransitionAnimation.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\Components\GameObject\TransitionFade.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\Components\GameObject\TransitionMove.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\Components\GameObject\TransitionMoveTraget.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\Components\GameObject\TransitionRotate.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\Components\GameObject\TransitionScale.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\Components\Screen\AbstractClasses\TransitionScreenBase.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\Components\Screen\FadeScreen.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\Components\Screen\WipeScreen.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\Components\TransitionBase.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\Components\TransitionManager.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\TransitionHelper.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\TransitionSteps\AbstractClasses\TransitionStep.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\TransitionSteps\AbstractClasses\TransitionStepValue.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\TransitionSteps\Fade.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\TransitionSteps\Move.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\TransitionSteps\MoveTarget.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\TransitionSteps\Rotate.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\TransitionSteps\Scale.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\TransitionSteps\ScreenFade.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\TransitionSteps\ScreenWipe.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\TransitionSteps\TransitionController.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\TransitionSteps\TransitionStepFloat.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\TransitionSteps\TransitionStepScreen.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\TransitionSteps\TransitionStepVector3.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\TransitionSteps\TriggerAnimation.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\_Demo\DisplayItem\Scripts\DisplayItemController.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\_Demo\Shake\Scripts\ShakeController.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\_Demo\Transitions\Scripts\ScreenCameraController.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\_Demo\Transitions\Scripts\ScriptingDemo.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\_Demo\Transitions\Scripts\TestController.cs" />
+     <Compile Include="Assets\FlipWebApps\BeautifulTransitions\_Demo\Transitions\Scripts\TransitionEvents.cs" />
      <Compile Include="Assets\Script\BajaiRaycast.cs" />
-     <Compile Include="Assets\Script\BajajCreator.cs" />
      <Compile Include="Assets\Script\Controller\BajajController.cs" />
      <Compile Include="Assets\Script\Controller\ButtonController.cs" />
      <Compile Include="Assets\Script\Controller\ButtonPlayController.cs" />
      <Compile Include="Assets\Script\Controller\GameController.cs" />
+     <Compile Include="Assets\Script\Controller\StarController.cs" />
      <Compile Include="Assets\Script\Controller\StreetController.cs" />
      <Compile Include="Assets\Script\Controller\TandaController.cs" />
+     <Compile Include="Assets\Script\Controller\TimerController.cs" />
+     <Compile Include="Assets\Script\Fps.cs" />
      <Compile Include="Assets\Script\Menu\ExitButton.cs" />
      <Compile Include="Assets\Script\Menu\Menu.cs" />
-     <Compile Include="Assets\Script\Menu\MenuManager.cs" />
      <Compile Include="Assets\Script\Menu\Pause.cs" />
      <Compile Include="Assets\Script\Menu\SceneLoader.cs" />
      <Compile Include="Assets\Script\Menu\soundButton.cs" />
-<<<<<<< HEAD
      <Compile Include="Assets\Script\Model\ButtonModel.cs" />
      <Compile Include="Assets\Script\Model\ButtonProp.cs" />
      <Compile Include="Assets\Script\Model\GameModel.cs" />
      <Compile Include="Assets\Script\Model\GameProp.cs" />
      <Compile Include="Assets\Script\Model\PlayerDirection.cs" />
      <Compile Include="Assets\Script\Model\StreetProp.cs" />
+     <Compile Include="Assets\Script\Spawner.cs" />
      <Compile Include="Assets\SuperLevelOptimizer\Scripts\SuperLevelOptimizer.cs" />
-=======
-     <Compile Include="Assets\Script\model\ButtonModel.cs" />
-     <Compile Include="Assets\Script\model\ButtonProp.cs" />
-     <Compile Include="Assets\Script\model\GameModel.cs" />
-     <Compile Include="Assets\Script\model\GameProp.cs" />
-     <Compile Include="Assets\Script\model\PlayerDirection.cs" />
-     <Compile Include="Assets\Script\model\StreetProp.cs" />
->>>>>>> 35dd8cabec62e34edf859d4763707875ea06d89f
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark01.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark01_UGUI.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark02.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark03.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark04.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\CameraController.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\ChatController.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\ObjectSpin.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\ShaderPropAnimator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\SimpleScript.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\SkewTextExample.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_DigitValidator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_ExampleScript_01.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_FrameRateCounter.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_TextEventCheck.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_TextEventHandler.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_TextInfoDebugTool.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_TextSelector_A.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_TextSelector_B.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_UiFrameRateCounter.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMPro_InstructionOverlay.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TeleType.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TextConsoleSimulator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TextMeshProFloatingText.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TextMeshSpawner.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexColorCycler.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexJitter.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexShakeA.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexShakeB.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexZoom.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\WarpTextExample.cs" />
      <Compile Include="Assets\mobile_touch_camera\scripts\AutoScrollDampMode.cs" />
      <Compile Include="Assets\mobile_touch_camera\scripts\CameraPlaneAxes.cs" />
      <Compile Include="Assets\mobile_touch_camera\scripts\MobilePickingController.cs" />
@@ -109,45 +163,52 @@
      <Compile Include="Assets\mobile_touch_camera\scripts\demo\DemoController.cs" />
      <Compile Include="Assets\mobile_touch_camera\scripts\tools\FocusCameraOnItem.cs" />
      <Compile Include="Assets\mobile_touch_camera\scripts\tools\SetBoundaryFromCollider.cs" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Fonts\Anton OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\FlipWebApps\BeautifulTransitions\Readme - Beautiful Transitions.txt" />
      <None Include="Assets\SimpleTown\Changelog.txt" />
+     <None Include="Assets\FlipWebApps\BeautifulTransitions\Resources\Shaders\FadeCamera.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\SuperLevelOptimizer\Tutorial\Tutorial.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Fonts\Oswald-Bold - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\FlipWebApps\BeautifulTransitions\Resources\Shaders\WipeScreen.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Fonts\Bangers - OFL.txt" />
+     <None Include="Assets\FlipWebApps\BeautifulTransitions\Resources\Shaders\WipeCamera.shader" />
      <None Include="Assets\BMA&apos;s Low Poly Trees\Thanks.txt" />
  <Reference Include="UnityEngine.UI">
-<<<<<<< HEAD
- <HintPath>C:/Program Files/Unity5.5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity5.5/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.PlaymodeTestsRunner">
- <HintPath>C:/Program Files/Unity5.5/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity5.5/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
- <HintPath>C:/Program Files/Unity5.5/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
- <HintPath>C:/Program Files/Unity5.5/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
-=======
- <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.PlaymodeTestsRunner">
- <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.HoloLens">
- <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VR">
- <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
->>>>>>> 0204b18f18637e71bfc241ca41ee6a25ea3ca848
+ <Reference Include="TextMeshPro">
+ <HintPath>I:/Unity/GoTukTuk/Assets/TextMesh Pro/Plugins/TextMeshPro.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
