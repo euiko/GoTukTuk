@@ -5,6 +5,6 @@ using UnityEngine.UI;
 
 public class ButtonProp : MonoBehaviour{
 
-	private ButtonModel.type buttonType;
+	public static ButtonModel buttonModel = new ButtonModel();
 
 }

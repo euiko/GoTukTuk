@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64244230922131146}
+  - component: {fileID: 65030133137482434}
   m_Layer: 0
   m_Name: fence_short_mesh
   m_TagString: Untagged
@@ -95,8 +95,8 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!64 &64244230922131146
-MeshCollider:
+--- !u!65 &65030133137482434
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -105,7 +105,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 3306a08c828838c4693720ab10d47a48, type: 3}
+  m_Size: {x: 2.5444856, y: 3.164739, z: 0.11834141}
+  m_Center: {x: 1.2369714, y: 1.5808007, z: 0.00000021234155}

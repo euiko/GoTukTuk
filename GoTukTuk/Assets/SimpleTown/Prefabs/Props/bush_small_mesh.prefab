@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64733472684598644}
+  - component: {fileID: 65904284935741844}
   m_Layer: 0
   m_Name: bush_small_mesh
   m_TagString: Untagged
@@ -95,8 +95,8 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!64 &64733472684598644
-MeshCollider:
+--- !u!65 &65904284935741844
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -105,7 +105,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: fa317daf241602d42874ef81417ae4f6, type: 3}
+  m_Size: {x: 1.1684723, y: 0.6667157, z: 1.2342472}
+  m_Center: {x: 0, y: 0.3236601, z: 0}

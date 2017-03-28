@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64967062963541770}
+  - component: {fileID: 65389852575119086}
   m_Layer: 0
   m_Name: Env_Road_Ramp_Straight
   m_TagString: Untagged
@@ -81,8 +81,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!64 &64967062963541770
-MeshCollider:
+--- !u!65 &65389852575119086
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -91,7 +91,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 79cd7b534c5f91548a91fca2204ae51a, type: 3}
+  m_Size: {x: 40.320293, y: 13.028421, z: 21.989304}
+  m_Center: {x: -20.16014, y: 5.5798025, z: -0.00000047683716}

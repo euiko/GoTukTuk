@@ -30,7 +30,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1217350750158740
 GameObject:
@@ -89,8 +89,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1086601851406448}
-  m_LocalRotation: {x: -4.32978e-17, y: 0.7071067, z: 0.7071068, w: -4.3297806e-17}
-  m_LocalPosition: {x: -0.099999905, y: 0.1, z: -31.6}
+  m_LocalRotation: {x: -0.49991274, y: 0.49991274, z: 0.50008726, w: 0.50008726}
+  m_LocalPosition: {x: 72, y: 0.1, z: 22.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4417815986059548}
@@ -98,7 +98,7 @@ Transform:
   - {fileID: 4497218867798552}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 270}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 90}
 --- !u!4 &4417815986059548
 Transform:
   m_ObjectHideFlags: 1
@@ -176,7 +176,7 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1086601851406448}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -299,10 +299,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4c7a371712eb64cae562198162aedc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fromUp: 1
-  fromRight: 0
-  fromDown: 1
-  fromLeft: 0
+  fromUp: 0
+  fromRight: 1
+  fromDown: 0
+  fromLeft: 1
   cmd: 0
   cmdFrom: 0
   streetType: 0

@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64579010236711988}
+  - component: {fileID: 65005839802308626}
   m_Layer: 0
   m_Name: Building_Garage_01
   m_TagString: Untagged
@@ -80,8 +80,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!64 &64579010236711988
-MeshCollider:
+--- !u!65 &65005839802308626
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -90,7 +90,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: df1ce49f4109e474896a5ec21b7133fd, type: 3}
+  m_Size: {x: 12.373886, y: 11.606873, z: 14.740883}
+  m_Center: {x: 0, y: 5.7591686, z: -0.0000038146973}

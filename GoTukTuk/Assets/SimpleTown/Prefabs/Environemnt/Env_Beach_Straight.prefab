@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64479877648501450}
+  - component: {fileID: 65797004981156752}
   m_Layer: 0
   m_Name: Env_Beach_Straight
   m_TagString: Untagged
@@ -80,8 +80,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!64 &64479877648501450
-MeshCollider:
+--- !u!65 &65797004981156752
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -90,7 +90,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 10096f48156be39408b74c1bcba40ae7, type: 3}
+  m_Size: {x: 19.999954, y: 2.999999, z: 20}
+  m_Center: {x: -9.999977, y: -1.4999995, z: -10}

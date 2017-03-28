@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64176124763276692}
+  - component: {fileID: 65662866579759720}
   m_Layer: 0
   m_Name: flag_mesh
   m_TagString: Untagged
@@ -98,8 +98,8 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!64 &64176124763276692
-MeshCollider:
+--- !u!65 &65662866579759720
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -108,7 +108,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 2b708f6785cad63438f5d0b725383c02, type: 3}
+  m_Size: {x: 0.14779037, y: 0.95092344, z: 1.8920422}
+  m_Center: {x: 0, y: 0, z: -0.9460211}

@@ -12,6 +12,7 @@ public class ButtonPlayController : MonoBehaviour {
 
 	void onClick(){
 		GameController.gameModel.IsStarted = true;
+		GameObject.Find ("GameplaySystem").GetComponent<GameController> ().switchCam ();
 	}
 
 	// Update is called once per frame

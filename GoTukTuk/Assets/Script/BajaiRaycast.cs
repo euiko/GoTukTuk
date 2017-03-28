@@ -5,15 +5,18 @@ using UnityEngine;
 public class BajaiRaycast : MonoBehaviour {
 
 	public float maxRayDistance = 25;
+	public int minVal = 2;
 	public GameObject currentStreet;
 	public GameObject nextStreet;
 
-	Vector3[] direction = {Vector3.forward, Vector3.down};
+	private Vector3[] direction = {Vector3.forward, Vector3.down};
 	private Vector3 v;
+	private bool willExecuteCurrentCommand;
+	private GameObject beforeCurrentStreet = null;
 
 	// Use this for initialization
 	void Start () {
-		
+		willExecuteCurrentCommand = false;
 	}
 	
 	// Update is called once per frame
@@ -39,24 +42,45 @@ public class BajaiRaycast : MonoBehaviour {
 			if (hit2.collider.gameObject.name.Contains ("jalan")) {
 				GameObject go = hit2.collider.gameObject;
 				currentStreet = hit2.collider.gameObject;
-				//Debug.Log ("ini Jalan");
-				if (!go.GetComponent<StreetProp> ().isCommandExecuted) {
-					//Debug.Log (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1)) + " - " + Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position)));
-					if (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1,3)) == Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position))) {
-						//Debug.Log ("position = true");
-						if(go.GetComponent<StreetProp> ().streetType == StreetProp.type.finish){
-							GameController.gameModel.IsFinished = true;
-						}
+				if (beforeCurrentStreet == null)
+					beforeCurrentStreet = currentStreet;
 
-						if (go.GetComponent<StreetProp> ().turnListener (StreetProp.command.turnRight)) {
-							BajajController.cmd [0] = true;
-						} else if (go.GetComponent<StreetProp> ().turnListener (StreetProp.command.turnLeft)) {
-							BajajController.cmd [1] = true;
+				if (beforeCurrentStreet.name != currentStreet.name && (currentStreet.GetComponent<StreetProp> ().streetType == StreetProp.type.finish || currentStreet.GetComponent<StreetProp> ().isContainStar))
+					StarController.collectingStar = true;
+
+				if (currentStreet.GetComponent<StreetProp> ().streetType == StreetProp.type.finish) {
+					GameController.gameModel.isAction = true;
+					GameController.gameModel.IsFinished = true;
+				} else {
+					//Debug.Log ("ini Jalan");
+					if (!go.GetComponent<StreetProp> ().isCommandExecuted) {
+						if (beforeCurrentStreet.name != currentStreet.name) {
+							willExecuteCurrentCommand = false;
+							if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.down && isLessThan (v1.z, go.transform.position.z, minVal)) {
+								willExecuteCurrentCommand = true;
+							} else if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.left && isLessThan (v1.x, go.transform.position.x, minVal)) {
+								willExecuteCurrentCommand = true;
+							} else if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.up && isGreaterThan (v1.z, go.transform.position.z, minVal)) {
+								willExecuteCurrentCommand = true;
+							} else if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.right && isGreaterThan (v1.x, go.transform.position.x, minVal)) {
+								willExecuteCurrentCommand = true;
+							}
 						}
-						go.GetComponent<StreetProp> ().isCommandExecuted = true;
+						//Debug.Log (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1)) + " - " + Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position)));
+						if (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1, 3)) == Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position))) {
+							//Debug.Log ("position = true");
+							if (willExecuteCurrentCommand) {
+								if (go.GetComponent<StreetProp> ().streetType == StreetProp.type.finish) {
+									GameController.gameModel.IsFinished = true;
+								}
+								turnBajaj (go);
+								go.GetComponent<StreetProp> ().isLeftFromRoad = true;
+								go.GetComponent<StreetProp> ().isCommandExecuted = true;
+							}
+						}
+						beforeCurrentStreet = currentStreet;
 					}
 				}
-
 			} else {
 				currentStreet = null;
 			}
@@ -86,5 +110,21 @@ public class BajaiRaycast : MonoBehaviour {
 		} else {
 			nextStreet = null;
 		}
+	}
+
+	private void turnBajaj(GameObject go){
+		if (go.GetComponent<StreetProp> ().turnListener (StreetProp.command.turnRight)) {
+			BajajController.cmd [0] = true;
+		} else if (go.GetComponent<StreetProp> ().turnListener (StreetProp.command.turnLeft)) {
+			BajajController.cmd [1] = true;
+		}
+	}
+
+	public bool isLessThan(float firstValue, float secondValue, float minVal){
+		return firstValue < secondValue && secondValue - firstValue > minVal ? true : false;
+	}
+
+	public bool isGreaterThan(float firstValue, float secondValue, float minVal){
+		return firstValue > secondValue && firstValue - secondValue > minVal ? true : false;
 	}
 }

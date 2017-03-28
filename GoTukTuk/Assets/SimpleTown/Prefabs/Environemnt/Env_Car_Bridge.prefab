@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64637000828655542}
+  - component: {fileID: 65250623475426876}
   m_Layer: 0
   m_Name: Env_Car_Bridge
   m_TagString: Untagged
@@ -80,8 +80,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!64 &64637000828655542
-MeshCollider:
+--- !u!65 &65250623475426876
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -90,7 +90,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: ebc1a943336841b4fbc79c984fd5d9af, type: 3}
+  m_Size: {x: 19.99999, y: 7.301578, z: 20.69223}
+  m_Center: {x: -9.999995, y: 0.62712026, z: 0.000030517578}
