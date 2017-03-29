@@ -29,8 +29,10 @@ public class Pause : MonoBehaviour {
 		Cam.GetComponent<MobileTouchCamera> ().enabled = false;
 		Character.GetComponent<Animator> ().enabled = false;
 		currentSpeed = Character.GetComponent<Rigidbody> ().velocity;
+		TimerController.countdownStart = false;
 		Character.GetComponent<Rigidbody> ().constraints = RigidbodyConstraints.FreezeAll;
 		GameController.gameModel.IsPaused = true;
+		GameObject.Find ("GameplaySystem").GetComponent<GameController> ().isOnPopUp = true;
 		PauseBlock.SetActive (true);
 		PauseButton.SetActive (false);
 	}
@@ -43,6 +45,8 @@ public class Pause : MonoBehaviour {
 		Character.GetComponent<Rigidbody> ().constraints = RigidbodyConstraints.None;
 		Character.GetComponent<Rigidbody> ().velocity = currentSpeed;
 		GameController.gameModel.IsPaused = false;
+		TimerController.countdownStart = true;
+		GameObject.Find ("GameplaySystem").GetComponent<GameController> ().isOnPopUp = false;
 		PauseBlock.SetActive (false);
 		PauseButton.SetActive (true);
 	}

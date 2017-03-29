@@ -18701,7 +18701,7 @@ MonoBehaviour:
   isOnPopUp: 0
   mainCam: {fileID: 1010979542}
   playerCam: {fileID: 0}
-  timeInSecond: 2
+  timeInSecond: 60
 --- !u!224 &1827247527
 RectTransform:
   m_ObjectHideFlags: 0
