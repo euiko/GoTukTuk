@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64224794652069114}
+  - component: {fileID: 65198995797751754}
   m_Layer: 0
   m_Name: Prop_Tree_01
   m_TagString: Untagged
@@ -80,8 +80,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!64 &64224794652069114
-MeshCollider:
+--- !u!65 &65198995797751754
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -90,7 +90,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 8a10c843519a08843b3fd0bed909aeb2, type: 3}
+  m_Size: {x: 2.667232, y: 4.6805453, z: 3.697494}
+  m_Center: {x: -0.00061160326, y: 2.3261201, z: 0.0043133497}

@@ -1,17 +1,16 @@
 ﻿using System.Collections;
 
 public class ButtonModel {
-	public enum type {direction, jump, brake};
+	public enum type {direction, jump, brake, delete};
 
 	private type buttonType;
 	private bool isActive;
 
-	public void setButtonType(type buttonType){
-		this.buttonType = buttonType;
-	}
-
-	public type getButtonType(){
-		return this.buttonType;
+	public type ButtonType{
+		get{ return this.buttonType; }
+		set{
+			this.buttonType = value;
+		}
 	}
 
 	public void setActive(){

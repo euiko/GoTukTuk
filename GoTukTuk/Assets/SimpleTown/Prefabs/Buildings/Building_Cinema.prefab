@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64470365842825214}
+  - component: {fileID: 65735812932038342}
   m_Layer: 0
   m_Name: Building_Cinema
   m_TagString: Untagged
@@ -80,8 +80,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!64 &64470365842825214
-MeshCollider:
+--- !u!65 &65735812932038342
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -90,7 +90,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: d5ed28ae93a48774b8fe6d997232f9e6, type: 3}
+  m_Size: {x: 31.341118, y: 15.541443, z: 26.752445}
+  m_Center: {x: 0.0000038146973, y: 7.7707214, z: 0}

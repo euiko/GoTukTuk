@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64239318477571478}
+  - component: {fileID: 65825864186808808}
   m_Layer: 0
   m_Name: Building_Shop_04
   m_TagString: Untagged
@@ -80,8 +80,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!64 &64239318477571478
-MeshCollider:
+--- !u!65 &65825864186808808
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -90,7 +90,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: fed19069578bc954ab108435bad01963, type: 3}
+  m_Size: {x: 10.91687, y: 10.412291, z: 11.875317}
+  m_Center: {x: 0, y: 5.2061453, z: -0.0000019073486}

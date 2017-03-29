@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64663046034243834}
+  - component: {fileID: 65032403777519500}
   m_Layer: 0
   m_Name: dish_mesh
   m_TagString: Untagged
@@ -98,8 +98,8 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!64 &64663046034243834
-MeshCollider:
+--- !u!65 &65032403777519500
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -108,7 +108,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 1e70ad8bd4a3b2e4fb89dbddb6f35fb3, type: 3}
+  m_Size: {x: 1.3542843, y: 1.8719044, z: 0.8615694}
+  m_Center: {x: 0, y: 0.936991, z: 0}

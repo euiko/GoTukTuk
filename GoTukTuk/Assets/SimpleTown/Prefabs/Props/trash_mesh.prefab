@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64230475685173872}
+  - component: {fileID: 65209298055301878}
   m_Layer: 0
   m_Name: trash_mesh
   m_TagString: Untagged
@@ -98,8 +98,8 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!64 &64230475685173872
-MeshCollider:
+--- !u!65 &65209298055301878
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -108,7 +108,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 62d9047c713741944b4ef10edf80aa27, type: 3}
+  m_Size: {x: 0.89728, y: 1.2033271, z: 0.94777536}
+  m_Center: {x: 0, y: 0.59837514, z: 0}

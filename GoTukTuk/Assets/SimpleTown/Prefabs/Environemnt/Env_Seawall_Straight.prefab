@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64794595581490940}
+  - component: {fileID: 65893682025733072}
   m_Layer: 0
   m_Name: Env_Seawall_Straight
   m_TagString: Untagged
@@ -80,8 +80,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!64 &64794595581490940
-MeshCollider:
+--- !u!65 &65893682025733072
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -90,7 +90,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: a444b8641d6fa9d41b786b5c5409bf9c, type: 3}
+  m_Size: {x: 5, y: 2.9999993, z: 19.999998}
+  m_Center: {x: -2.5, y: -1.4999999, z: -9.999999}

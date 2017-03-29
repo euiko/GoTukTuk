@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64245321951659124}
+  - component: {fileID: 65177096602806736}
   m_Layer: 0
   m_Name: Building_AutoRepair
   m_TagString: Untagged
@@ -80,8 +80,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!64 &64245321951659124
-MeshCollider:
+--- !u!65 &65177096602806736
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -90,7 +90,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300002, guid: 85b19c2bdfd536e47a82f2cf20fbd921, type: 3}
+  m_Size: {x: 21.489048, y: 10.665697, z: 10.805297}
+  m_Center: {x: 0.00000047683716, y: 5.3328476, z: -0.00000047683716}

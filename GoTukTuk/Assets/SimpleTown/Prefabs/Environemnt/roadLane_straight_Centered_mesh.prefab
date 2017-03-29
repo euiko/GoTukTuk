@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 64740805024561792}
+  - component: {fileID: 65801288777423556}
   m_Layer: 0
   m_Name: roadLane_straight_Centered_mesh
   m_TagString: Untagged
@@ -81,8 +81,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!64 &64740805024561792
-MeshCollider:
+--- !u!65 &65801288777423556
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -91,7 +91,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300002, guid: c399b0f81e97a8a43a5ad25ebc94c918, type: 3}
+  m_Size: {x: 4.999991, y: 0, z: 7.000002}
+  m_Center: {x: -2.4999955, y: -0.19479579, z: -3.500001}

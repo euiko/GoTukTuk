@@ -1,28 +1,49 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using BitBenderGames;
 
 public class Pause : MonoBehaviour {
 
-	public GameObject PauseButton, PanelPause;
+	public GameObject PauseButton, PauseBlock;
+	private GameObject Character, Cam;
+	private Vector3 currentSpeed;
 
 	public void Start()
 	{
-		PanelPause.SetActive (false);
+		Cam = GameObject.FindGameObjectWithTag ("MainCamera");
+		Character = GameObject.Find ("bajai_jadi_texturetest_animasi(Clone)");
+		PauseBlock.SetActive (false);
 		PauseButton.SetActive (true);
+	}
+
+	public void Update(){
+		if (Character == null) {
+			Character = GameObject.Find ("bajai_jadi_texturetest_animasi(Clone)");
+		}
 	}
 
 	public void pause()
 	{
-		PanelPause.SetActive (true);
+		Cam.GetComponent<TouchInputController> ().enabled = false;
+		Cam.GetComponent<MobileTouchCamera> ().enabled = false;
+		Character.GetComponent<Animator> ().enabled = false;
+		currentSpeed = Character.GetComponent<Rigidbody> ().velocity;
+		Character.GetComponent<Rigidbody> ().constraints = RigidbodyConstraints.FreezeAll;
+		GameController.gameModel.IsPaused = true;
+		PauseBlock.SetActive (true);
 		PauseButton.SetActive (false);
-		Time.timeScale = 0;
 	}
 
 	public void resume()
 	{
-		PanelPause.SetActive (false);
+		Cam.GetComponent<TouchInputController> ().enabled = true;
+		Cam.GetComponent<MobileTouchCamera> ().enabled = true;
+		Character.GetComponent<Animator> ().enabled = true;
+		Character.GetComponent<Rigidbody> ().constraints = RigidbodyConstraints.None;
+		Character.GetComponent<Rigidbody> ().velocity = currentSpeed;
+		GameController.gameModel.IsPaused = false;
+		PauseBlock.SetActive (false);
 		PauseButton.SetActive (true);
-		Time.timeScale = 1;
 	}
 }

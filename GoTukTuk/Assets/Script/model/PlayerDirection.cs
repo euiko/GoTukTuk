@@ -39,9 +39,9 @@ public class PlayerDirection{
 	}
 
 	public void setCurrentDirectionIndex(int value){
-		Debug.Log ("Before :" + value);
+//		Debug.Log ("Before :" + value);
 		this.currentDirectionIndex = limit(value, 0, 3);
-		Debug.Log (this.currentDirectionIndex);
+//		Debug.Log (this.currentDirectionIndex);
 	}
 
 	public int getCurrentDirection(){
@@ -173,7 +173,7 @@ public class PlayerDirection{
 
 	private int limit(int value, int start, int end){
 		int range = end - start + 1;
-		Debug.Log ("Range  = " + range);
+		//Debug.Log ("Range  = " + range);
 		if (value > end) {
 			return value - (value / range) * range;
 		} else if (value < start) {
