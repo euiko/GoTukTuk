@@ -46,6 +46,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BuildReport\Scripts\Editor\BRT_VersionInfo.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Options\BRT_FileFilters.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Options\BRT_FiltersUsed.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Options\BRT_Options.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\ReportData\BRT_AssetList.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\ReportData\BRT_BuildInfo.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\ReportData\BRT_BuildPlatformType.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\ReportData\BRT_BuildSettingsCategoryType.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\ReportData\BRT_SizePart.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\ReportData\BRT_UnityBuildSettings.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\ReportGeneration\BRT_ReportGenerator.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\ReportGeneration\BRT_UnityBuildSettingsUtility.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Utility\BRT_LibCacheUtil.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Utility\BRT_Util.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Utility\DldUtil_BackwardFileReader.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Utility\DldUtil_BigFileReader.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Utility\DldUtil_GetRspDefines.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Utility\DldUtil_TraverseDirectory.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Utility\DldUtil_UnityVersion.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Window\BRT_BuildReportWindow.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Window\BRT_WindowLabels.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Window\BRT_WindowSettings.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Window\BRT_WindowUtility.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Window\Screen\BRT_AssetListScreen.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Window\Screen\BRT_BaseScreen.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Window\Screen\BRT_BuildSettingsScreen.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Window\Screen\BRT_HelpScreen.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Window\Screen\BRT_OptionsScreen.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Window\Screen\BRT_OverviewScreen.cs" />
+     <Compile Include="Assets\BuildReport\Scripts\Editor\Window\Screen\BRT_SizeStatsScreen.cs" />
      <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Editor\EditorMenuItems.cs" />
      <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Transitions\Editor\TransitionSettingsDrawer.cs" />
      <Compile Include="Assets\SuperLevelOptimizer\Scripts\Editor\MeshCombiner.cs" />
@@ -59,7 +89,6 @@
      <Compile Include="Assets\mobile_touch_camera\editor\TouchInputControllerEditor.cs" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Fonts\Anton OFL.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
@@ -72,17 +101,15 @@
      <None Include="Assets\SuperLevelOptimizer\Tutorial\Tutorial.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-     <None Include="Assets\TextMesh Pro\Fonts\Oswald-Bold - OFL.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\FlipWebApps\BeautifulTransitions\Resources\Shaders\WipeScreen.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\TextMesh Pro\Fonts\Bangers - OFL.txt" />
+     <None Include="Assets\BuildReport\VERSION.txt" />
+     <None Include="Assets\BuildReport\README.txt" />
      <None Include="Assets\FlipWebApps\BeautifulTransitions\Resources\Shaders\WipeCamera.shader" />
-     <None Include="Assets\BMA&apos;s Low Poly Trees\Thanks.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>

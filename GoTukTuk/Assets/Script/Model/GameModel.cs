@@ -8,13 +8,32 @@ public class GameModel{
 	private bool isFinished;
 	private bool isPaused;
 	private bool isGameOver;
-	private int _collectedStar;
-	private int _encCode;
+	private int _collectedStar, _currentTime, _encCode, _duration;
 
 	public GameModel(){
 		System.Random rndInt = new System.Random ();
 		_encCode = rndInt.Next(50,100);
 		_collectedStar = encryptStar(0);
+	}
+
+	public int currentTimeMinutes {
+		get { 
+			return (_currentTime - _encCode < 0 ? -1 : _currentTime - _encCode) / 60;
+		}
+	}
+
+	public int currentTimeSecond {
+		get { return (_currentTime - _encCode < 0 ? -1 : _currentTime - _encCode) % 60; }
+	}
+
+	public int duration{
+		get { return this._duration - _encCode; }
+		set { this.currentTime = value; this._duration = value + _encCode; }
+	}
+
+	public int currentTime{
+		get { return (_currentTime - _encCode < 0 ? -1 : _currentTime - _encCode); }
+		set { this._currentTime = (value < 0? 0 : value) + _encCode; }
 	}
 
 	private int encryptStar(int value){

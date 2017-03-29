@@ -18,6 +18,7 @@ public class StarController : MonoBehaviour {
 		if (collectingStar) {
 			GameController.gameModel.collectedStar = GameController.gameModel.collectedStar + 1;
 			valueObject.GetComponent<TMPro.TextMeshProUGUI> ().text = "" + GameController.gameModel.collectedStar;
+			Debug.Log ("Dapet Bintang = " + GameController.gameModel.collectedStar);
 			collectingStar = false;
 		}
 	}

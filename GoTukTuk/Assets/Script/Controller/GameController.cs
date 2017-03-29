@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour {
 	public static GameModel gameModel = new GameModel();
 	public bool isOnPopUp;
 	public Camera mainCam, playerCam;
+	public int timeInSecond;
+
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +22,7 @@ public class GameController : MonoBehaviour {
 		if (gameModel.isAction) {
 			if (gameModel.IsFinished && !isOnPopUp) {
 				isOnPopUp = true;
-				switchCam ();
+				//switchCam ();
 				sceneScopeWin.GetComponent<FlipWebApps.BeautifulTransitions._Demo.Transitions.Scripts.TestController> ().TransitionIn();
 			} else if (gameModel.IsGameOver && !isOnPopUp) {
 				isOnPopUp = true;
@@ -33,10 +35,14 @@ public class GameController : MonoBehaviour {
 	public void switchCam(){
 		if (this.mainCam.enabled) {
 			this.mainCam.enabled = false;
+			this.mainCam.GetComponent<AudioListener> ().enabled = false;
 			this.playerCam.enabled = true;
+			this.playerCam.GetComponent<AudioListener> ().enabled = true;
 		} else {
 			this.mainCam.enabled = true;
+			this.mainCam.GetComponent<AudioListener> ().enabled = true;
 			this.playerCam.enabled = false;
+			this.playerCam.GetComponent<AudioListener> ().enabled = false;
 		}
 	}
 }

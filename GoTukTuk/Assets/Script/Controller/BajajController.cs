@@ -15,7 +15,7 @@ public class BajajController : MonoBehaviour {
 
 	private Rigidbody rbBajai;
 	private Animator aBajai;
-	private bool state, onCollision = false, isCentered, onTurn = false, isDestroyed = false, destroyAction;
+	private bool state, onCollision = false, isCentered, onTurn = false, isDestroyed = false;
 	private int curAngle;
 	private Vector3 startPos, destroyTarget;
 	private float speed = 0;
@@ -68,15 +68,6 @@ public class BajajController : MonoBehaviour {
 		}
 	}
 
-	// Update is called once per frame
-	//void Update () {
-	//	if (!GameController.gameModel.IsPaused) {
-	//		keepInPlace ();
-	//		checkTurn ();
-	//		moveToCenterOfRoad ();
-	//	}
-	//}
-
 	public void turnTo(BajajController.to direction){
 		playerDirection.setCurrentDirection((int) direction);
 		playerDirection.setCurrentDirectionIndex (playerDirection.getCurrentDirectionIndex () + playerDirection.getNextDirection());
@@ -118,6 +109,19 @@ public class BajajController : MonoBehaviour {
 		}
 	}
 
+	void OnTriggerEnter(Collider col) {
+		if (col.gameObject.name.Contains ("Star")) {
+			StarController.collectingStar = true;
+			Destroy (col.gameObject);
+		}
+
+		if (col.gameObject.name.Contains ("Finish")) {
+			GameController.gameModel.isAction = true;
+			GameController.gameModel.IsFinished = true;
+		}
+	}
+
+
 	void OnCollisionEnter (Collision col)
 	{
 		if(col.gameObject.name.Contains("jalan") && !onCollision){
@@ -129,7 +133,6 @@ public class BajajController : MonoBehaviour {
 			GameController.gameModel.isAction = true;
 			GameController.gameModel.IsGameOver = true;
 			GetComponent<Animator> ().enabled = false;
-			destroyAction = true;
 		}
 	}
 

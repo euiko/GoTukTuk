@@ -42,12 +42,18 @@ public class Spawner : MonoBehaviour {
 			GameObject go = Resources.Load ("MadeUp/bajai_jadi_texturetest_animasi", typeof(GameObject)) as GameObject;
 			go.GetComponentInChildren<Camera> ().enabled = false;
 			GameObject startSign = Resources.Load ("MadeUp/TandaJalanStart", typeof(GameObject)) as GameObject;
-			Instantiate (go, v, getRotation(Quaternion.identity));
-			Instantiate (startSign, v2, getRotation(Quaternion.identity));
+			Instantiate (go, v, getRotation (Quaternion.identity));
+			Instantiate (startSign, v2, getRotation (Quaternion.identity));
 			GameObject.Find ("GameplaySystem").GetComponent<GameController> ().playerCam = GameObject.Find ("bajai_jadi_texturetest_animasi(Clone)").GetComponentInChildren<Camera> ();
+			GameObject.Find ("GameplaySystem").GetComponent<GameController> ().playerCam.GetComponent<AudioListener> ().enabled = false;
 		} else if (GetComponent<StreetProp> ().streetType == StreetProp.type.finish) {
 			GameObject finishSign = Resources.Load ("MadeUp/TandaJalanFinish", typeof(GameObject)) as GameObject;
-			Instantiate (finishSign, v2, getRotation(Quaternion.identity));
+			Instantiate (finishSign, v2, getRotation (Quaternion.identity));
+			GameObject bintang = Resources.Load ("MadeUp/bintang", typeof(GameObject)) as GameObject;
+			Instantiate (bintang, transform.position, Quaternion.identity);
+		} else if (GetComponent<StreetProp> ().isContainStar) {
+			GameObject bintang = Resources.Load ("MadeUp/bintang", typeof(GameObject)) as GameObject;
+			Instantiate (bintang, transform.position, Quaternion.identity);
 		}
 	}
 

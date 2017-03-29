@@ -45,13 +45,7 @@ public class BajaiRaycast : MonoBehaviour {
 				if (beforeCurrentStreet == null)
 					beforeCurrentStreet = currentStreet;
 
-				if (beforeCurrentStreet.name != currentStreet.name && (currentStreet.GetComponent<StreetProp> ().streetType == StreetProp.type.finish || currentStreet.GetComponent<StreetProp> ().isContainStar))
-					StarController.collectingStar = true;
-
-				if (currentStreet.GetComponent<StreetProp> ().streetType == StreetProp.type.finish) {
-					GameController.gameModel.isAction = true;
-					GameController.gameModel.IsFinished = true;
-				} else {
+				if (currentStreet.GetComponent<StreetProp> ().streetType == StreetProp.type.normal) {
 					//Debug.Log ("ini Jalan");
 					if (!go.GetComponent<StreetProp> ().isCommandExecuted) {
 						if (beforeCurrentStreet.name != currentStreet.name) {

@@ -21,14 +21,6 @@ public class TandaController : MonoBehaviour {
 	void Update () {
 		if (go.GetComponent<StreetProp> ().isOnAction) {
 			if (go.GetComponent<StreetProp> ().turnListener (StreetProp.command.noCommand) == false) {
-//			if (go.GetComponent<StreetProp> ().turnListener (StreetProp.command.turnLeft)) {
-//				mat = Resources.Load ("Materials/tanda/tandaBelokKiri", typeof(Material)) as Material;
-//				transform.GetComponent<Renderer> ().material = mat;
-//			} else if (go.GetComponent<StreetProp> ().turnListener (StreetProp.command.turnRight)) {
-//				mat = Resources.Load ("Materials/tanda/tandaBelokKanan", typeof(Material)) as Material;
-//				transform.GetComponent<Renderer> ().material = mat;
-//			}
-
 				changeMaterial (StreetProp.commandFrom.down, 0);
 				changeMaterial (StreetProp.commandFrom.left, 270);
 				changeMaterial (StreetProp.commandFrom.up, 180);
@@ -55,42 +47,20 @@ public class TandaController : MonoBehaviour {
 		if (go.GetComponent<StreetProp> ().turnListener (cmdFrom, StreetProp.command.turnLeft)) {
 			mat = Resources.Load (materials[0,0], typeof(Material)) as Material;
 			transform.GetComponent<Renderer> ().material = mat;
-		
-			Debug.Log ("kiri " + cmdFrom);
-//			transform.localRotation.eulerAngles.x = startRot + angle;
+			//Debug.Log ("kiri " + cmdFrom);
 			Vector3 r = startRot;
-			//if (go.name.Contains("PertigaanKanan")) {
-			//	r.x = startRot.x - (360 - angle);
-			//	r.y = 90;
-			//	r.z = 90;
-			//}
-			//else if (startRot.x == 90) {
-				r.x = startRot.x - (360 - angle);
-				r.y = 90;
-				r.z = 90;
-			//} else {
-			//	r.x = startRot.x - angle;
-			//}
+			r.x = startRot.x - (360 - angle);
+			r.y = 90;
+			r.z = 90;
 			transform.localRotation = Quaternion.Euler(r);
 		} else if (go.GetComponent<StreetProp> ().turnListener (cmdFrom, StreetProp.command.turnRight)) {
 			mat = Resources.Load (materials[0,1], typeof(Material)) as Material;
 			transform.GetComponent<Renderer> ().material = mat;
-			Debug.Log ("kanan - ");
-//			transform.localRotation.eulerAngles.x = startRot + angle;
-
+			//Debug.Log ("kanan - ");
 			Vector3 r = startRot;
-			//if (go.name.Contains("PertigaanKanan")) {
-			//	r.x = startRot.x - (360 - angle);
-			//	r.y = 90;
-			//	r.z = 90;
-			//}
-			//else if (startRot.x == 90) {
-				r.x = startRot.x - (360 - angle);
-				r.y = 90;
-				r.z = 90;
-			//} else {
-			//	r.x = startRot.x - angle;
-			//}
+			r.x = startRot.x - (360 - angle);
+			r.y = 90;
+			r.z = 90;
 			transform.localRotation = Quaternion.Euler(r);
 		}
 	}
