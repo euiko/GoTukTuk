@@ -11,10 +11,15 @@ public class TandaController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+	//	transform.LookAt(new Vector3(180,180,-180));
 		go = transform.parent.gameObject;
-		startRot = transform.localRotation.eulerAngles;
-		//Debug.Log (go.name + " COK = " + transform.rotation.eulerAngles);
+		transform.rotation = Quaternion.Euler (0, 180, 0);
+		//if (go.transform.localRotation.eulerAngles.y == 270)
+			
+		//transform.Rotate (Vector3.up * (-go.transform.localRotation.eulerAngles.y), Space.Self);
+		//transform.rotation = Quaternion.Euler (transform.rotation.eulerAngles.x, transform.localRotation.eulerAngles.y - go.transform.localRotation.eulerAngles.y, transform.rotation.z);
+		startRot = transform.localEulerAngles;
+		Debug.Log (go.name + " COK = " + go.transform.localRotation.eulerAngles);
 	}
 	
 	// Update is called once per frame
@@ -49,7 +54,7 @@ public class TandaController : MonoBehaviour {
 			transform.GetComponent<Renderer> ().material = mat;
 			//Debug.Log ("kiri " + cmdFrom);
 			Vector3 r = startRot;
-			r.x = startRot.x - (360 - angle);
+			r.x = (startRot.y == 270 ? 180 : startRot.x) - (360 - angle);
 			r.y = 90;
 			r.z = 90;
 			transform.localRotation = Quaternion.Euler(r);
@@ -58,9 +63,10 @@ public class TandaController : MonoBehaviour {
 			transform.GetComponent<Renderer> ().material = mat;
 			//Debug.Log ("kanan - ");
 			Vector3 r = startRot;
-			r.x = startRot.x - (360 - angle);
+			r.x = (startRot.y == 270 ? 180 : startRot.x) - (360 - angle);
 			r.y = 90;
 			r.z = 90;
+			Debug.Log (go.name + " KRIK = " + r + " ; SU = " + startRot);
 			transform.localRotation = Quaternion.Euler(r);
 		}
 	}
