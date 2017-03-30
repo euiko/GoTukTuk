@@ -108,6 +108,7 @@
      <Compile Include="Assets\Script\Model\GameProp.cs" />
      <Compile Include="Assets\Script\Model\PlayerDirection.cs" />
      <Compile Include="Assets\Script\Model\StreetProp.cs" />
+     <Compile Include="Assets\Script\Other\transitionGame.cs" />
      <Compile Include="Assets\Script\Spawner.cs" />
      <Compile Include="Assets\SuperLevelOptimizer\Scripts\SuperLevelOptimizer.cs" />
      <Compile Include="Assets\mobile_touch_camera\scripts\AutoScrollDampMode.cs" />

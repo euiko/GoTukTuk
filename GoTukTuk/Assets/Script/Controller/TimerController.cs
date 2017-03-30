@@ -11,6 +11,8 @@ public class TimerController : MonoBehaviour {
 	private int lastTime;
 
 	void Start (){
+		if (GameController.gameModel == null)
+			GameController.gameModel = new GameModel ();
 		GameController.gameModel.duration = GameObject.Find("GameplaySystem").GetComponent<GameController> ().timeInSecond;
 		displayTime ();
 		countdownStart = true;

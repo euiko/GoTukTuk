@@ -5,14 +5,15 @@ using UnityEngine;
 public class GameController : MonoBehaviour {
 
 	public GameObject sceneScopePause, sceneScopeWin, sceneScopeLose;
-	public static GameModel gameModel = new GameModel();
+	public static GameModel gameModel;
 	public bool isOnPopUp;
 	public Camera mainCam, playerCam;
 	public int timeInSecond;
 
-
 	// Use this for initialization
 	void Start () {
+		if (gameModel == null)
+			gameModel = new GameModel ();
 		mainCam.enabled = true;
 		gameModel.IsStarted = false;
 	}
