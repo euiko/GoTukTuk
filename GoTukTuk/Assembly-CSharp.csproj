@@ -102,7 +102,6 @@
      <Compile Include="Assets\Script\Menu\Pause.cs" />
      <Compile Include="Assets\Script\Menu\SceneLoader.cs" />
      <Compile Include="Assets\Script\Menu\soundButton.cs" />
-<<<<<<< HEAD
      <Compile Include="Assets\Script\Model\ButtonModel.cs" />
      <Compile Include="Assets\Script\Model\ButtonProp.cs" />
      <Compile Include="Assets\Script\Model\GameModel.cs" />
@@ -110,15 +109,7 @@
      <Compile Include="Assets\Script\Model\PlayerDirection.cs" />
      <Compile Include="Assets\Script\Model\StreetProp.cs" />
      <Compile Include="Assets\Script\Other\transitionGame.cs" />
-=======
->>>>>>> 8950ff3cab4b5fab0873fdca78cec2ccf7fe0a86
      <Compile Include="Assets\Script\Spawner.cs" />
-     <Compile Include="Assets\Script\model\ButtonModel.cs" />
-     <Compile Include="Assets\Script\model\ButtonProp.cs" />
-     <Compile Include="Assets\Script\model\GameModel.cs" />
-     <Compile Include="Assets\Script\model\GameProp.cs" />
-     <Compile Include="Assets\Script\model\PlayerDirection.cs" />
-     <Compile Include="Assets\Script\model\StreetProp.cs" />
      <Compile Include="Assets\SuperLevelOptimizer\Scripts\SuperLevelOptimizer.cs" />
      <Compile Include="Assets\mobile_touch_camera\scripts\AutoScrollDampMode.cs" />
      <Compile Include="Assets\mobile_touch_camera\scripts\CameraPlaneAxes.cs" />
@@ -182,6 +173,9 @@
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro">
+ <HintPath>I:/Unity/GoTukTuk/Assets/TextMesh Pro/Plugins/TextMeshPro.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
