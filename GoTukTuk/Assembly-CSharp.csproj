@@ -46,6 +46,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Easy Save 2\ES2Init.cs" />
+     <Compile Include="Assets\Easy Save 2\Examples\Creating an Automatic Save Structure\ES2UniqueID.cs" />
+     <Compile Include="Assets\Easy Save 2\Examples\Creating an Automatic Save Structure\UniqueGameLogic.cs" />
+     <Compile Include="Assets\Easy Save 2\Examples\Creating an Automatic Save Structure\UniqueObjectManager.cs" />
+     <Compile Include="Assets\Easy Save 2\Examples\Creating an Automatic Save Structure\UniqueSaveManager.cs" />
+     <Compile Include="Assets\Easy Save 2\Examples\Save and Load Prefabs Instantiated at Runtime\PrefabManager.cs" />
+     <Compile Include="Assets\Easy Save 2\Examples\Shared Assets\Scripts\MyExampleScript.cs" />
+     <Compile Include="Assets\Easy Save 2\Examples\Upload and Download a Texture\UploadDownloadTexture.cs" />
+     <Compile Include="Assets\Easy Save 2\Types\ES2UserType_Level.cs" />
+     <Compile Include="Assets\Easy Save 2\Types\ES2_AudioClip.cs" />
      <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\DisplayItem\DisplayItemHelper.cs" />
      <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Helper\Perlin.cs" />
      <Compile Include="Assets\FlipWebApps\BeautifulTransitions\Scripts\Helper\TweenMethods.cs" />
@@ -92,6 +102,7 @@
      <Compile Include="Assets\Script\Controller\ButtonController.cs" />
      <Compile Include="Assets\Script\Controller\ButtonPlayController.cs" />
      <Compile Include="Assets\Script\Controller\GameController.cs" />
+     <Compile Include="Assets\Script\Controller\StageController.cs" />
      <Compile Include="Assets\Script\Controller\StarController.cs" />
      <Compile Include="Assets\Script\Controller\StreetController.cs" />
      <Compile Include="Assets\Script\Controller\TandaController.cs" />
@@ -104,6 +115,7 @@
      <Compile Include="Assets\Script\Menu\soundButton.cs" />
      <Compile Include="Assets\Script\Model\ButtonModel.cs" />
      <Compile Include="Assets\Script\Model\ButtonProp.cs" />
+     <Compile Include="Assets\Script\Model\Database\Level.cs" />
      <Compile Include="Assets\Script\Model\GameModel.cs" />
      <Compile Include="Assets\Script\Model\GameProp.cs" />
      <Compile Include="Assets\Script\Model\PlayerDirection.cs" />
@@ -143,10 +155,12 @@
      <None Include="Assets\FlipWebApps\BeautifulTransitions\Resources\Shaders\FadeCamera.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\Easy Save 2\changelog.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\SuperLevelOptimizer\Tutorial\Tutorial.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\Easy Save 2\readme.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\FlipWebApps\BeautifulTransitions\Resources\Shaders\WipeScreen.shader" />
@@ -154,6 +168,7 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\BuildReport\VERSION.txt" />
+     <None Include="Assets\link.xml" />
      <None Include="Assets\BuildReport\README.txt" />
      <None Include="Assets\FlipWebApps\BeautifulTransitions\Resources\Shaders\WipeCamera.shader" />
  <Reference Include="UnityEngine.UI">
@@ -173,6 +188,12 @@
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="ES2">
+ <HintPath>I:/Unity/GoTukTuk/Assets/Plugins/ES2.dll</HintPath>
+ </Reference>
+ <Reference Include="MoodkieSecurity">
+ <HintPath>I:/Unity/GoTukTuk/Assets/Plugins/MoodkieSecurity.dll</HintPath>
  </Reference>
  <Reference Include="TextMeshPro">
  <HintPath>I:/Unity/GoTukTuk/Assets/TextMesh Pro/Plugins/TextMeshPro.dll</HintPath>

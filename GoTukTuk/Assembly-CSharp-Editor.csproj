@@ -97,10 +97,12 @@
      <None Include="Assets\FlipWebApps\BeautifulTransitions\Resources\Shaders\FadeCamera.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\Easy Save 2\changelog.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\SuperLevelOptimizer\Tutorial\Tutorial.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\Easy Save 2\readme.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\FlipWebApps\BeautifulTransitions\Resources\Shaders\WipeScreen.shader" />
@@ -108,6 +110,7 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\BuildReport\VERSION.txt" />
+     <None Include="Assets\link.xml" />
      <None Include="Assets\BuildReport\README.txt" />
      <None Include="Assets\FlipWebApps\BeautifulTransitions\Resources\Shaders\WipeCamera.shader" />
  <Reference Include="UnityEditor.Advertisements">
@@ -157,6 +160,15 @@
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="ES2">
+ <HintPath>I:/Unity/GoTukTuk/Assets/Plugins/ES2.dll</HintPath>
+ </Reference>
+ <Reference Include="MoodkieSecurity">
+ <HintPath>I:/Unity/GoTukTuk/Assets/Plugins/MoodkieSecurity.dll</HintPath>
+ </Reference>
+ <Reference Include="ES2Editor">
+ <HintPath>I:/Unity/GoTukTuk/Assets/Plugins/Editor/ES2Editor.dll</HintPath>
  </Reference>
  <Reference Include="TextMeshPro">
  <HintPath>I:/Unity/GoTukTuk/Assets/TextMesh Pro/Plugins/TextMeshPro.dll</HintPath>

@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class TimerController : MonoBehaviour {
 
-	public GameObject minutesText, secondsText;
+	public GameObject minutesText, secondsText, divider;
 
 	private static bool _countdownStart;
 	private static bool _countAction;
 	private int lastTime;
+	private double lastTime2;
+	private bool isSetDanger;
 
 	void Start (){
 		if (GameController.gameModel == null)
@@ -29,6 +31,8 @@ public class TimerController : MonoBehaviour {
 		if (_countdownStart && GameController.gameModel.currentTime > 0) {
 			if (_countAction) {
 				lastTime = Mathf.RoundToInt (Time.time);
+				lastTime2 = System.Math.Round (Time.time, 1);
+				divider.SetActive (false);
 				_countAction = false;
 			}
 			if (Mathf.RoundToInt (Time.time) - lastTime == 1) {
@@ -39,8 +43,31 @@ public class TimerController : MonoBehaviour {
 					GameController.gameModel.isAction = true;
 					GameController.gameModel.IsGameOver = true;
 				}
+
+				if (!isSetDanger && GameController.gameModel.currentTime < 10) {
+					changeColorTo ("#E54848FF");
+					isSetDanger = true;
+				}
+			}
+
+			if (System.Math.Round (Time.time, 1) - lastTime2 == 0.5) {
+				if (divider.gameObject.activeSelf) {
+					divider.gameObject.SetActive (false);
+				} else {
+					divider.gameObject.SetActive (true);
+				}
+
+				lastTime2 = System.Math.Round (Time.time, 1);
 			}
 		}
+	}
+
+	void changeColorTo(string hex){
+		Color color = new Color ();
+		ColorUtility.TryParseHtmlString (hex, out color);
+		minutesText.GetComponent<TMPro.TextMeshProUGUI> ().color = color;
+		secondsText.GetComponent<TMPro.TextMeshProUGUI> ().color = color;
+		divider.GetComponent<TMPro.TextMeshProUGUI> ().color = color;
 	}
 
 	void displayTime() {

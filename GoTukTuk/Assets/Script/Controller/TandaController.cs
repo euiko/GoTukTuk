@@ -19,7 +19,7 @@ public class TandaController : MonoBehaviour {
 		//transform.Rotate (Vector3.up * (-go.transform.localRotation.eulerAngles.y), Space.Self);
 		//transform.rotation = Quaternion.Euler (transform.rotation.eulerAngles.x, transform.localRotation.eulerAngles.y - go.transform.localRotation.eulerAngles.y, transform.rotation.z);
 		startRot = transform.localEulerAngles;
-		Debug.Log (go.name + " COK = " + go.transform.localRotation.eulerAngles);
+//		Debug.Log (go.name + " COK = " + go.transform.localRotation.eulerAngles);
 	}
 	
 	// Update is called once per frame

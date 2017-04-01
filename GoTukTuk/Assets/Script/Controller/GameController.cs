@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour {
 
+	public enum EStage {one = 1, two = 2 , three = 3, four = 4};
+	public enum ELevel {one = 1, two = 2, three = 3, four = 4, five = 5, six = 6, seven = 7, eight = 8};
+
 	public GameObject sceneScopePause, sceneScopeWin, sceneScopeLose;
 	public static GameModel gameModel;
 	public bool isOnPopUp;
 	public Camera mainCam, playerCam;
 	public int timeInSecond;
+	public EStage stage;
+	public ELevel level;
 
 	// Use this for initialization
 	void Start () {
@@ -36,12 +41,28 @@ public class GameController : MonoBehaviour {
 				for (int i = 0; i < GameController.gameModel.collectedStar; i++) {
 					childs[i].transform.FindChild ("value").gameObject.SetActive (true);
 				}
+				saveGame ();
 			} else if (gameModel.IsGameOver && !isOnPopUp) {
 				isOnPopUp = true;
 				sceneScopeLose.GetComponent<FlipWebApps.BeautifulTransitions._Demo.Transitions.Scripts.TestController> ().TransitionIn();
 			}
 			gameModel.isAction = false;
 		}
+	}
+
+	public void saveGame(){
+		string saveName = "stage" + stage;
+		Dictionary<string, Level> stageData;
+		if (ES2.Exists ("game.dat?tag=" + saveName + "&encrypt=true&password=gotuktukbahagia")) {
+			stageData = ES2.LoadDictionary<string, Level> ("game.dat?tag=" + saveName + "&encrypt=true&password=gotuktukbahagia");
+		} else {
+			stageData = new Dictionary<string, Level> ();
+		}
+		stageData ["" + level] = Level.Save (true, gameModel.currentTime, gameModel.collectedStar);
+		ES2.Save(stageData, "game.dat?tag=" + saveName + "&encrypt=true&password=gotuktukbahagia");
+
+		/* Load data with encryption */
+		//int i = ES2.Load<int>("file.es?encrypt=true&password=pass");
 	}
 
 	public void switchCam(){

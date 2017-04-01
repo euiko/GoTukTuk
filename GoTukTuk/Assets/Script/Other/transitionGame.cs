@@ -8,4 +8,5 @@ public class transitionGame : MonoBehaviour {
 	public void destroyGameData(){
 		GameController.gameModel = null;
 	}
+
 }
