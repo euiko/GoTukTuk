@@ -11,10 +11,15 @@ public class TandaController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+	//	transform.LookAt(new Vector3(180,180,-180));
 		go = transform.parent.gameObject;
+		transform.rotation = Quaternion.Euler (0, 180, 0);
+		//if (go.transform.localRotation.eulerAngles.y == 270)
+			
+		//transform.Rotate (Vector3.up * (-go.transform.localRotation.eulerAngles.y), Space.Self);
+		//transform.rotation = Quaternion.Euler (transform.rotation.eulerAngles.x, transform.localRotation.eulerAngles.y - go.transform.localRotation.eulerAngles.y, transform.rotation.z);
 		startRot = transform.localRotation.eulerAngles;
-		//Debug.Log (go.name + " COK = " + transform.rotation.eulerAngles);
+		Debug.Log (go.name + " COK = " + go.transform.localRotation.eulerAngles);
 	}
 	
 	// Update is called once per frame
