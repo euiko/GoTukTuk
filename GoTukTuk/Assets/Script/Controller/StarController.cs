@@ -10,6 +10,8 @@ public class StarController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		if (GameController.gameModel == null)
+			GameController.gameModel = new GameModel ();
 		valueObject.GetComponent<TMPro.TextMeshProUGUI> ().text = "" + GameController.gameModel.collectedStar;
 	}
 	
@@ -18,7 +20,7 @@ public class StarController : MonoBehaviour {
 		if (collectingStar) {
 			GameController.gameModel.collectedStar = GameController.gameModel.collectedStar + 1;
 			valueObject.GetComponent<TMPro.TextMeshProUGUI> ().text = "" + GameController.gameModel.collectedStar;
-			Debug.Log ("Dapet Bintang = " + GameController.gameModel.collectedStar);
+			//Debug.Log ("Dapet Bintang = " + GameController.gameModel.collectedStar);
 			collectingStar = false;
 		}
 	}

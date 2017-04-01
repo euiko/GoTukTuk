@@ -949,7 +949,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: TimKid SDF Material
   m_Shader: {fileID: 4800000, guid: dca26082f9cb439469295791d9f76fe5, type: 3}
-  m_ShaderKeywords: GLOW_ON
+  m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -1061,7 +1061,7 @@ Material:
       second: 0
     - first:
         name: _OutlineWidth
-      second: 0.502
+      second: 0.248
     - first:
         name: _PerspectiveFilter
       second: 0.875

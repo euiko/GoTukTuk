@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class GameModel{
 
+	private string _levelname;
 	private bool _isAction;
 	private bool isStarted = false;
 	private bool isFinished;
@@ -11,9 +12,23 @@ public class GameModel{
 	private int _collectedStar, _currentTime, _encCode, _duration;
 
 	public GameModel(){
+		init ();
+	}
+
+	public GameModel(string name){
+		init ();
+		levelName = name;
+	}
+
+	private void init(){
 		System.Random rndInt = new System.Random ();
 		_encCode = rndInt.Next(50,100);
 		_collectedStar = encryptStar(0);
+	}
+
+	public string levelName{
+		get { return this._levelname; }
+		set { this._levelname = value; }
 	}
 
 	public int currentTimeMinutes {

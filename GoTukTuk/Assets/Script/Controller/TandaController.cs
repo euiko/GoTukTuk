@@ -18,8 +18,13 @@ public class TandaController : MonoBehaviour {
 			
 		//transform.Rotate (Vector3.up * (-go.transform.localRotation.eulerAngles.y), Space.Self);
 		//transform.rotation = Quaternion.Euler (transform.rotation.eulerAngles.x, transform.localRotation.eulerAngles.y - go.transform.localRotation.eulerAngles.y, transform.rotation.z);
+<<<<<<< HEAD
 		startRot = transform.localRotation.eulerAngles;
 		Debug.Log (go.name + " COK = " + go.transform.localRotation.eulerAngles);
+=======
+		startRot = transform.localEulerAngles;
+//		Debug.Log (go.name + " COK = " + go.transform.localRotation.eulerAngles);
+>>>>>>> 5c5348474b52422630cc9ee88c88f5de9a6bfa80
 	}
 	
 	// Update is called once per frame
@@ -54,7 +59,7 @@ public class TandaController : MonoBehaviour {
 			transform.GetComponent<Renderer> ().material = mat;
 			//Debug.Log ("kiri " + cmdFrom);
 			Vector3 r = startRot;
-			r.x = startRot.x - (360 - angle);
+			r.x = (startRot.y == 270 ? 180 : startRot.x) - (360 - angle);
 			r.y = 90;
 			r.z = 90;
 			transform.localRotation = Quaternion.Euler(r);
@@ -63,9 +68,10 @@ public class TandaController : MonoBehaviour {
 			transform.GetComponent<Renderer> ().material = mat;
 			//Debug.Log ("kanan - ");
 			Vector3 r = startRot;
-			r.x = startRot.x - (360 - angle);
+			r.x = (startRot.y == 270 ? 180 : startRot.x) - (360 - angle);
 			r.y = 90;
 			r.z = 90;
+			Debug.Log (go.name + " KRIK = " + r + " ; SU = " + startRot);
 			transform.localRotation = Quaternion.Euler(r);
 		}
 	}
