@@ -27,6 +27,8 @@ public class BajajController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		if (GameController.gameModel == null)
+			GameController.gameModel = new GameModel ();
 		rbBajai = GetComponent<Rigidbody> ();
 		aBajai = GetComponent<Animator> ();
 		playerDirection.setCurrentDirection (0);

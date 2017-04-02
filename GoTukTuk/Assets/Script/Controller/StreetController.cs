@@ -11,7 +11,11 @@ public class StreetController : MonoBehaviour {
 		GetComponent<StreetProp>().getCurCommandFrom();
 		if (!GameController.gameModel.IsStarted && !GameController.gameModel.IsPaused) {
 			if (ButtonProp.buttonModel.ButtonType == ButtonModel.type.direction) {
+
+
 				if (ButtonProp.buttonModel.getIsActive ()) {
+					ButtonProp._isOnAction = true;
+					ButtonProp._onButtonDirection = true;
 					GetComponent<StreetProp> ().cmd = StreetProp.command.turnRight;
 					GetComponent<StreetProp> ().isOnAction = true;
 					ButtonProp.buttonModel.setInActive ();
@@ -28,6 +32,11 @@ public class StreetController : MonoBehaviour {
 				}
 			}else if(ButtonProp.buttonModel.ButtonType == ButtonModel.type.delete){
 				if (ButtonProp.buttonModel.getIsActive ()) {
+					if (GetComponent<StreetProp> ().cmd == StreetProp.command.turnLeft || GetComponent<StreetProp> ().cmd == StreetProp.command.turnRight) {
+						GameController.gameModel.directionCount = GameController.gameModel.directionCount + 1;
+					}
+					ButtonProp._isOnAction = true;
+					ButtonProp._updateCount = true;
 					GetComponent<StreetProp> ().cmd = StreetProp.command.noCommand;
 					GetComponent<StreetProp> ().isOnAction = true;
 					ButtonProp.buttonModel.setInActive ();
