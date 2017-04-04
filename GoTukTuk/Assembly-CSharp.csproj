@@ -189,12 +189,6 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
- <Reference Include="ES2">
- <HintPath>I:/Unity/GoTukTuk/Assets/Plugins/ES2.dll</HintPath>
- </Reference>
- <Reference Include="MoodkieSecurity">
- <HintPath>I:/Unity/GoTukTuk/Assets/Plugins/MoodkieSecurity.dll</HintPath>
- </Reference>
  <Reference Include="TextMeshPro">
  <HintPath>E:/KELAS 12/PROJECT WORK/GoTukTuk/GoTukTuk/Assets/TextMesh Pro/Plugins/TextMeshPro.dll</HintPath>
  </Reference>
