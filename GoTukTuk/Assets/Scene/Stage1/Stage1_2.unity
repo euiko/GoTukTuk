@@ -42,7 +42,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 7
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -961,6 +961,21 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 224603038803533126, guid: 1e757b042f40dc7428f799436893d209,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -37.69995
+      objectReference: {fileID: 0}
+    - target: {fileID: 224821160579548088, guid: 1e757b042f40dc7428f799436893d209,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -37.69995
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160488327133676, guid: 1e757b042f40dc7428f799436893d209,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -37.69995
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e757b042f40dc7428f799436893d209, type: 2}
   m_IsPrefabParent: 0
@@ -1180,7 +1195,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ea729863e0ab2b942844148c09cd395a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -112.9
+      value: -113.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ea729863e0ab2b942844148c09cd395a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1204,7 +1219,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ea729863e0ab2b942844148c09cd395a, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ea729863e0ab2b942844148c09cd395a, type: 2}
       propertyPath: m_LocalScale.x
@@ -3747,7 +3762,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ea729863e0ab2b942844148c09cd395a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -112.9
+      value: -113.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ea729863e0ab2b942844148c09cd395a, type: 2}
       propertyPath: m_LocalPosition.z

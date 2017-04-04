@@ -104,10 +104,10 @@ GameObject:
   - component: {fileID: 33376626542134542}
   - component: {fileID: 23746559466719498}
   - component: {fileID: 64666582429094232}
-  - component: {fileID: 114139884151746652}
   - component: {fileID: 222538437025707402}
   - component: {fileID: 114816801286199952}
   - component: {fileID: 114845245367739958}
+  - component: {fileID: 114139884151746652}
   m_Layer: 8
   m_Name: jalanBelokKanan
   m_TagString: Untagged
@@ -357,6 +357,7 @@ MonoBehaviour:
   cmdFrom: 0
   streetType: 0
   isCommandExecuted: 0
+  isContainStar: 0
 --- !u!114 &114756932369134288
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -390,6 +391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e77e0bd6ce2fd54394866d16f24430b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  axis: 0
+  type: 0
 --- !u!222 &222538437025707402
 CanvasRenderer:
   m_ObjectHideFlags: 1

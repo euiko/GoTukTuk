@@ -9,6 +9,7 @@ public class BajaiRaycast : MonoBehaviour {
 	public GameObject currentStreet;
 	public GameObject nextStreet;
 
+	private Rigidbody rbBajai;
 	private Vector3[] direction = {Vector3.forward, Vector3.down};
 	private Vector3 v;
 	private bool willExecuteCurrentCommand;
@@ -16,6 +17,7 @@ public class BajaiRaycast : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		rbBajai = GetComponent<Rigidbody> ();
 		willExecuteCurrentCommand = false;
 	}
 	
@@ -50,14 +52,19 @@ public class BajaiRaycast : MonoBehaviour {
 					if (!go.GetComponent<StreetProp> ().isCommandExecuted) {
 						if (beforeCurrentStreet.name != currentStreet.name) {
 							willExecuteCurrentCommand = false;
-							if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.down && isLessThan (v1.z, go.transform.position.z, minVal)) {
-								willExecuteCurrentCommand = true;
-							} else if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.left && isLessThan (v1.x, go.transform.position.x, minVal)) {
-								willExecuteCurrentCommand = true;
-							} else if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.up && isGreaterThan (v1.z, go.transform.position.z, minVal)) {
-								willExecuteCurrentCommand = true;
-							} else if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.right && isGreaterThan (v1.x, go.transform.position.x, minVal)) {
-								willExecuteCurrentCommand = true;
+							if (go.GetComponent<StreetProp> ().cmd == StreetProp.command.jump) {
+								GetComponent<Animator> ().SetTrigger ("isJump");
+								rbBajai.velocity = 17 * rbBajai.velocity.normalized;
+							} else {
+								if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.down && isLessThan (v1.z, go.transform.position.z, minVal)) {
+									willExecuteCurrentCommand = true;
+								} else if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.left && isLessThan (v1.x, go.transform.position.x, minVal)) {
+									willExecuteCurrentCommand = true;
+								} else if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.up && isGreaterThan (v1.z, go.transform.position.z, minVal)) {
+									willExecuteCurrentCommand = true;
+								} else if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.right && isGreaterThan (v1.x, go.transform.position.x, minVal)) {
+									willExecuteCurrentCommand = true;
+								}
 							}
 						}
 						//Debug.Log (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1)) + " - " + Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position)));

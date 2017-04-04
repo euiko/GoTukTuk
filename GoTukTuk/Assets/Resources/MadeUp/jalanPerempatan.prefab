@@ -103,9 +103,9 @@ GameObject:
   - component: {fileID: 33831522222588312}
   - component: {fileID: 23285858242842758}
   - component: {fileID: 64845376543069892}
-  - component: {fileID: 114630464015617370}
   - component: {fileID: 114195499306863626}
   - component: {fileID: 114856526547394232}
+  - component: {fileID: 114630464015617370}
   m_Layer: 0
   m_Name: jalanPerempatan
   m_TagString: Untagged

@@ -37,6 +37,7 @@ public class BajajController : MonoBehaviour {
 		curAngle = 0;
 		Vector3 v = rbBajai.centerOfMass;
 		v.y = -0.9f;
+		//v.z = 2.5f;
 		rbBajai.centerOfMass = v;
 	}
 
@@ -121,6 +122,12 @@ public class BajajController : MonoBehaviour {
 			GameController.gameModel.isAction = true;
 			GameController.gameModel.IsFinished = true;
 		}
+
+		if (col.gameObject.name.Contains ("Collider")) {
+			GameController.gameModel.isAction = true;
+			GameController.gameModel.IsGameOver = true;
+			GetComponent<Animator> ().enabled = false;
+		}
 	}
 
 
@@ -136,6 +143,7 @@ public class BajajController : MonoBehaviour {
 			GameController.gameModel.IsGameOver = true;
 			GetComponent<Animator> ().enabled = false;
 		}
+			
 	}
 
 	void keepInPlace(){
