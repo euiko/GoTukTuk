@@ -2121,6 +2121,11 @@ Prefab:
       propertyPath: fromLeft
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23863904704649568, guid: 75d14927f2152f441886627aa140cfb5,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 434118e1c3e612c489c3f3917dabf9e1, type: 2}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 75d14927f2152f441886627aa140cfb5, type: 2}
@@ -4420,6 +4425,16 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: TransitionOut
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137672758171550, guid: 48d2189b67623b94a831d537fddd8e2e,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1758504668}
+    - target: {fileID: 114137672758171550, guid: 48d2189b67623b94a831d537fddd8e2e,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: switchCam
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 48d2189b67623b94a831d537fddd8e2e, type: 2}
@@ -12140,6 +12155,11 @@ Prefab:
       propertyPath: axis
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23863904704649568, guid: 75d14927f2152f441886627aa140cfb5,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 434118e1c3e612c489c3f3917dabf9e1, type: 2}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 75d14927f2152f441886627aa140cfb5, type: 2}
@@ -12872,6 +12892,7 @@ GameObject:
   - component: {fileID: 1758504667}
   - component: {fileID: 1758504666}
   - component: {fileID: 1758504665}
+  - component: {fileID: 1758504668}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -12924,6 +12945,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1758504668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1758504664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16886e2e11cfd0e41a7295b06fd88b28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1767665451
 GameObject:
   m_ObjectHideFlags: 0
@@ -13455,9 +13487,9 @@ MonoBehaviour:
   mainCam: {fileID: 1010979542}
   playerCam: {fileID: 0}
   timeInSecond: 60
-  stage: 0
-  level: 0
-  jumlahBelok: 4
+  stage: 1
+  level: 3
+  jumlahBelok: 99
   jumlahLompat: 0
   jumlahRem: 0
 --- !u!224 &1827247527
@@ -13610,6 +13642,11 @@ Prefab:
       propertyPath: axis
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23863904704649568, guid: 75d14927f2152f441886627aa140cfb5,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6b440975d8b590248a47319cf5541bb7, type: 2}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 0}
