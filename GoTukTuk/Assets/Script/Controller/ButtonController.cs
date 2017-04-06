@@ -13,12 +13,23 @@ public class ButtonController : MonoBehaviour{
 	}
 
 	void onClick(){
-		if (GameController.gameModel.IsStarted == false) {
-			ButtonProp.buttonModel.ButtonType = this.buttonType;
-			ButtonProp.buttonModel.setActive ();
+		if (!GameController.gameModel.IsStarted) {
+			if (buttonType == ButtonModel.type.direction && GameController.gameModel.directionCount > 0) {
+				ButtonProp.buttonModel.ButtonType = ButtonModel.type.direction;
+				ButtonProp.buttonModel.setActive ();
+			}else if (buttonType == ButtonModel.type.jump && GameController.gameModel.jumpCount > 0) {
+				ButtonProp.buttonModel.ButtonType = ButtonModel.type.jump;
+				ButtonProp.buttonModel.setActive ();
+			}else if (buttonType == ButtonModel.type.brake && GameController.gameModel.brakeCount > 0) {
+				ButtonProp.buttonModel.ButtonType = ButtonModel.type.brake;
+				ButtonProp.buttonModel.setActive ();
+			}else if (buttonType == ButtonModel.type.delete) {
+				ButtonProp.buttonModel.ButtonType = ButtonModel.type.delete;
+				ButtonProp.buttonModel.setActive ();
+			}
 		}
 
-		Debug.Log (GameController.gameModel.IsStarted);
+		//Debug.Log (GameController.gameModel.IsStarted);
 	}
 
 }

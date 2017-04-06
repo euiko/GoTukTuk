@@ -45,10 +45,10 @@ public class StreetProp : MonoBehaviour {
 		return this.cmdFrom == cmdFrom && this.cmd == cmd ? true : false;
 	}
 
-	public commandFrom getCurCommandFrom(){
+	public commandFrom getCurCommandFrom( command com){
 		bool[] arrayFrom = {fromDown, fromLeft, fromUp, fromRight };
 		int i = (int)cmdFrom;
-		if (this.cmd == command.turnLeft) {
+		if (this.cmd == com) {
 			int j = 0;
 			while (j < arrayFrom.Length) {
 				i++;
@@ -67,4 +67,6 @@ public class StreetProp : MonoBehaviour {
 			return (commandFrom)i;
 		}
 	}
+
+
 }

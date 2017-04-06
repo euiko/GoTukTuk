@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour {
 	public int timeInSecond;
 	public EStage stage;
 	public ELevel level;
+	public int jumlahBelok, jumlahLompat, jumlahRem;
 
 	// Use this for initialization
 	void Start () {
@@ -52,15 +53,25 @@ public class GameController : MonoBehaviour {
 
 	public void saveGame(){
 		string saveName = "stage" + stage;
+		bool willSave = false;
 		Dictionary<string, Level> stageData;
 		if (ES2.Exists ("game.dat?tag=" + saveName + "&encrypt=true&password=gotuktukbahagia")) {
 			stageData = ES2.LoadDictionary<string, Level> ("game.dat?tag=" + saveName + "&encrypt=true&password=gotuktukbahagia");
+			if (stageData.ContainsKey ("" + level)) {
+				if (gameModel.currentTime <= stageData ["" + level].time && gameModel.collectedStar >= stageData ["" + level].star)
+					willSave = true;
+			} else {
+				willSave = true;
+			}
 		} else {
 			stageData = new Dictionary<string, Level> ();
+			willSave = true;
 		}
-		stageData ["" + level] = Level.Save (true, gameModel.currentTime, gameModel.collectedStar);
-		ES2.Save(stageData, "game.dat?tag=" + saveName + "&encrypt=true&password=gotuktukbahagia");
 
+		if (willSave) {
+			stageData ["" + level] = Level.Save (true, gameModel.currentTime, gameModel.collectedStar);
+			ES2.Save (stageData, "game.dat?tag=" + saveName + "&encrypt=true&password=gotuktukbahagia");
+		}
 		/* Load data with encryption */
 		//int i = ES2.Load<int>("file.es?encrypt=true&password=pass");
 	}

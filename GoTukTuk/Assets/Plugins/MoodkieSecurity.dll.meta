@@ -48,6 +48,7 @@ PluginImporter:
   iconMap: {}
   executionOrder: {}
   isPreloaded: 0
+  isOverridable: 0
   platformData:
     Android:
       enabled: 1
@@ -108,6 +109,10 @@ PluginImporter:
         CPU: AnyCPU
     Win64:
       enabled: 1
+      settings:
+        CPU: AnyCPU
+    WindowsStoreApps:
+      enabled: 0
       settings:
         CPU: AnyCPU
     iOS:

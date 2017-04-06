@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 33931080500450826}
   - component: {fileID: 23863904704649568}
   - component: {fileID: 64412892243557152}
-  - component: {fileID: 114754365600726276}
   - component: {fileID: 114469958668084488}
   - component: {fileID: 114276362757911038}
+  - component: {fileID: 114754365600726276}
   m_Layer: 8
   m_Name: jalanLurus
   m_TagString: Untagged

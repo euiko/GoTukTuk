@@ -9,7 +9,7 @@ public class GameModel{
 	private bool isFinished;
 	private bool isPaused;
 	private bool isGameOver;
-	private int _collectedStar, _currentTime, _encCode, _duration;
+	private int _collectedStar, _currentTime, _encCode, _duration, _directionCount, _jumpCount, _brakeCount;
 
 	public GameModel(){
 		init ();
@@ -24,6 +24,21 @@ public class GameModel{
 		System.Random rndInt = new System.Random ();
 		_encCode = rndInt.Next(50,100);
 		_collectedStar = encryptStar(0);
+	}
+
+	public int directionCount{
+		get{ return this._directionCount - (2 * this.encCode + 1); }
+		set { this._directionCount = value >= 0 && value < 100 ? value + (2 * this.encCode + 1) : (2 * this.encCode + 1);}
+	}
+
+	public int jumpCount{
+		get{ return this._jumpCount - (2 * this.encCode + 2); }
+		set { this._jumpCount = value >= 0 && value < 100 ? value + (2 * this.encCode + 2) : (2 * this.encCode + 2);}
+	}
+
+	public int brakeCount{
+		get{ return this._brakeCount - (2 * this.encCode + 3); }
+		set { this._brakeCount = value >= 0 && value < 100 ? value + (2 * this.encCode + 3) : (2 * this.encCode + 3);}
 	}
 
 	public string levelName{
