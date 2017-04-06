@@ -6,6 +6,7 @@ public class BajajController : MonoBehaviour {
 
 	public static PlayerDirection playerDirection = new PlayerDirection ();
 	public static bool[] cmd = {false, false};
+	public static bool willJump, isOnJump, isOnAir, isJumped;
 
 	public WheelCollider TireBL;
 	public WheelCollider TireBR;
@@ -23,6 +24,10 @@ public class BajajController : MonoBehaviour {
 
 	void Awake(){
 		isCentered = true;
+		willJump = false;
+		isOnAir = false;
+		isOnJump = false;
+		isJumped = false;
 	}
 
 	// Use this for initialization
@@ -128,6 +133,13 @@ public class BajajController : MonoBehaviour {
 			GameController.gameModel.IsGameOver = true;
 			GetComponent<Animator> ().enabled = false;
 		}
+
+
+		Debug.Log ("Willjump = " + willJump + " on the " + col.gameObject.name);
+		if (willJump && col.gameObject.name.Contains ("jumper")) {
+			//GetComponent<Animator> ().SetTrigger ("jump");
+			Debug.Log ("Mencolot");
+		}
 	}
 
 
@@ -136,6 +148,7 @@ public class BajajController : MonoBehaviour {
 		if(col.gameObject.name.Contains("jalan") && !onCollision){
 			startPos = transform.position;
 			onCollision = true;
+			rbBajai.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezePositionZ;
 		}
 
 		if (col.gameObject.name.Contains ("Collider")) {
@@ -143,7 +156,7 @@ public class BajajController : MonoBehaviour {
 			GameController.gameModel.IsGameOver = true;
 			GetComponent<Animator> ().enabled = false;
 		}
-			
+
 	}
 
 	void keepInPlace(){
@@ -160,7 +173,7 @@ public class BajajController : MonoBehaviour {
 			//}
 			//Debug.Log ("Sedang Menghancurkan");
 			transform.position = Vector3.MoveTowards (transform.position, destroyTarget, 20 * Time.deltaTime);
-			Debug.Log ("Jarak = " + Vector3.Distance (transform.position, destroyTarget));
+//			Debug.Log ("Jarak = " + Vector3.Distance (transform.position, destroyTarget));
 			if (Vector3.Distance(transform.position, destroyTarget) < explosion / 2) {
 				isDestroyed = true;
 				speed = 0;

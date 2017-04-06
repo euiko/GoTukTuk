@@ -52,8 +52,9 @@ public class BajaiRaycast : MonoBehaviour {
 					if (!go.GetComponent<StreetProp> ().isCommandExecuted) {
 						if (beforeCurrentStreet.name != currentStreet.name) {
 							willExecuteCurrentCommand = false;
+							BajajController.willJump = false;
 							if (go.GetComponent<StreetProp> ().cmd == StreetProp.command.jump) {
-								GetComponent<Animator> ().SetTrigger ("isJump");
+								BajajController.willJump = true;
 								rbBajai.velocity = 17 * rbBajai.velocity.normalized;
 							} else {
 								if (go.GetComponent<StreetProp> ().cmdFrom == StreetProp.commandFrom.down && isLessThan (v1.z, go.transform.position.z, minVal)) {
