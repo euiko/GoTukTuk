@@ -33,7 +33,7 @@ public class GameController : MonoBehaviour {
 				sceneScopeWin.GetComponent<FlipWebApps.BeautifulTransitions._Demo.Transitions.Scripts.TestController> ().TransitionIn();
 				Transform popUpWin = sceneScopeWin.GetComponent<FlipWebApps.BeautifulTransitions._Demo.Transitions.Scripts.TestController> ().TransitionFromButtons.transform.FindChild("Panel");
 				Transform sisaWaktu = popUpWin.Find ("Text").Find("sisaWaktu");
-				sisaWaktu.Find("value").GetComponent<TMPro.TextMeshProUGUI> ().text = GameController.gameModel.currentTimeMinutes + " : " + GameController.gameModel.currentTimeSecond;
+				sisaWaktu.Find("value").GetComponent<TMPro.TextMeshProUGUI> ().text = (GameController.gameModel.currentTimeMinutes < 10 ? "0" + GameController.gameModel.currentTimeMinutes : "" + GameController.gameModel.currentTimeMinutes) + " : " + (GameController.gameModel.currentTimeSecond < 10 ? "0" + GameController.gameModel.currentTimeSecond : "" + GameController.gameModel.currentTimeSecond );
 				Transform star = popUpWin.transform.FindChild ("starRes");
 				List<Transform> childs = new List<Transform> ();
 				foreach (Transform child in star) {

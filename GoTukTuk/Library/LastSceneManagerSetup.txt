@@ -1,16 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scene/Menu/HomeScreen1.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scene/Stage1/Stage1_6.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scene/Stage1/Stage1_4.unity
-=======
-- path: Assets/Scene/Stage1/Stage1_7.unity
->>>>>>> fd66d70f3d9cceb7a5282b858f2878ec5158fbed
->>>>>>> 8980bb3a2317214be3e0e9c3c70358cf0086f691
->>>>>>> b72b0dd26879168f8a7fac845df44019c1606474
   isLoaded: 1
   isActive: 1

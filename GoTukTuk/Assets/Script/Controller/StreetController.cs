@@ -56,6 +56,8 @@ public class StreetController : MonoBehaviour {
 					GetComponent<StreetProp> ().cmd = StreetProp.command.turnRight;
 					GetComponent<StreetProp> ().isOnAction = true;
 					ButtonProp.buttonModel.setInActive ();
+					ButtonController.isOnAction = true;
+					ButtonController.afterTurn = true;
 				} else {
 					if (!(GetComponent<StreetProp> ().turnListener (StreetProp.command.noCommand))) {
 						if (GetComponent<StreetProp> ().turnListener (StreetProp.command.turnLeft)) {
@@ -78,6 +80,8 @@ public class StreetController : MonoBehaviour {
 					ButtonProp._onButtonJump = true;
 					GetComponent<StreetProp> ().cmd = StreetProp.command.jump;
 					ButtonProp.buttonModel.setInActive ();
+					ButtonController.isOnAction = true;
+					ButtonController.afterJump = true;
 				} else {
 					GetComponent<StreetProp> ().getCurCommandFrom (StreetProp.command.jump);
 				}
@@ -98,5 +102,7 @@ public class StreetController : MonoBehaviour {
 		GetComponent<StreetProp> ().cmd = StreetProp.command.noCommand;
 		GetComponent<StreetProp> ().isOnAction = true;
 		ButtonProp.buttonModel.setInActive ();
+		ButtonController.isOnAction = true;
+		ButtonController.afterDelete = true;
 	}
 }

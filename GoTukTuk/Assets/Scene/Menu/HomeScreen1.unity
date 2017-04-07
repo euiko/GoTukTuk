@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 298877243}
   - component: {fileID: 298877242}
   - component: {fileID: 298877241}
+  - component: {fileID: 298877244}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -153,6 +154,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &298877244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 298877240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16886e2e11cfd0e41a7295b06fd88b28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &481239920
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,7 +667,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1165094535}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 298877244}
+        m_MethodName: exitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1165094535
