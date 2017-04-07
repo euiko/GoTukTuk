@@ -46,6 +46,28 @@ public class BajaiRaycast : MonoBehaviour {
 				currentStreet = hit2.collider.gameObject;
 				if (beforeCurrentStreet == null)
 					beforeCurrentStreet = currentStreet;
+				if (GetComponent<Rigidbody> ().isKinematic) {
+					GetComponent<Rigidbody> ().isKinematic = false;
+					Debug.Log ("Unfreeze");
+				}
+				if (beforeCurrentStreet != currentStreet && beforeCurrentStreet.GetComponent<StreetProp> ().cmd == StreetProp.command.jump) {
+					BajajController.willJump = false;
+					BajajController.isOnJump = true;
+				}
+
+				if (getWheelPosY(GetComponent<BajajController> ().TireBL) - currentStreet.transform.position.y <= 1f && BajajController.isOnJump) {
+					GetComponent<Rigidbody> ().isKinematic = true;
+					BajajController.isOnJump = false;
+					Debug.Log ("Kiri Execute");
+				}else if(getWheelPosY(GetComponent<BajajController> ().TireBR) - currentStreet.transform.position.y <= 1f && BajajController.isOnJump){
+					GetComponent<Rigidbody> ().isKinematic = true;
+					BajajController.isOnJump = false;
+					Debug.Log ("Kanan Execute");
+				}else if(getWheelPosY(GetComponent<BajajController> ().TireF) - currentStreet.transform.position.y <= 1f && BajajController.isOnJump){
+					GetComponent<Rigidbody> ().isKinematic = true;
+					BajajController.isOnJump = false;
+					Debug.Log ("Depan Execute");
+				}
 
 				if (currentStreet.GetComponent<StreetProp> ().streetType == StreetProp.type.normal) {
 					//Debug.Log ("ini Jalan");
@@ -69,7 +91,7 @@ public class BajaiRaycast : MonoBehaviour {
 							}
 						}
 						//Debug.Log (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1)) + " - " + Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position)));
-						if (Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1, 3)) == Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position))) {
+						if (BajajController.playerDirection.isSame(Mathf.Round (BajajController.playerDirection.getDirectionAxis (v1, 3)), Mathf.Round (BajajController.playerDirection.getDirectionAxis (go.transform.position)), 1f)) {
 							//Debug.Log ("position = true");
 							if (willExecuteCurrentCommand) {
 								if (go.GetComponent<StreetProp> ().streetType == StreetProp.type.finish) {
@@ -128,5 +150,9 @@ public class BajaiRaycast : MonoBehaviour {
 
 	public bool isGreaterThan(float firstValue, float secondValue, float minVal){
 		return firstValue > secondValue && firstValue - secondValue > minVal ? true : false;
+	}
+
+	public float getWheelPosY(WheelCollider wl){
+		return wl.transform.position.y + wl.suspensionDistance + wl.radius;
 	}
 }

@@ -5,6 +5,7 @@ public class GameModel{
 
 	private string _levelname;
 	private bool _isAction;
+	private bool _isStart;
 	private bool isStarted = false;
 	private bool isFinished;
 	private bool isPaused;
@@ -24,6 +25,11 @@ public class GameModel{
 		System.Random rndInt = new System.Random ();
 		_encCode = rndInt.Next(50,100);
 		_collectedStar = encryptStar(0);
+	}
+
+	public bool isStart {
+		get{ return this._isStart; }
+		set{ this._isStart = value; }
 	}
 
 	public int directionCount{

@@ -21,6 +21,9 @@ public class StreetController : MonoBehaviour {
 					//Debug.Log(jump.parent.name + " += " + jump.rotation.eulerAngles);
 				}
 				jump.rotation = getJumpDirection ();
+			} else if(GetComponent<StreetProp> ().cmd != StreetProp.command.jump && isJump) {
+				Destroy (jump.gameObject);
+				isJump = false;
 			}
 			isOnAction = false;
 		}
@@ -66,19 +69,13 @@ public class StreetController : MonoBehaviour {
 				}
 			}else if(ButtonProp.buttonModel.ButtonType == ButtonModel.type.delete){
 				if (ButtonProp.buttonModel.getIsActive ()) {
-					if (GetComponent<StreetProp> ().cmd == StreetProp.command.turnLeft || GetComponent<StreetProp> ().cmd == StreetProp.command.turnRight) {
-						GameController.gameModel.directionCount = GameController.gameModel.directionCount + 1;
-					}
-					ButtonProp._isOnAction = true;
-					ButtonProp._updateCount = true;
-					GetComponent<StreetProp> ().cmd = StreetProp.command.noCommand;
-					GetComponent<StreetProp> ().isOnAction = true;
-					ButtonProp.buttonModel.setInActive ();
+					delete ();
 				}
 			}else if(ButtonProp.buttonModel.ButtonType == ButtonModel.type.jump){
 				if (ButtonProp.buttonModel.getIsActive ()) {
 					ButtonProp._isOnAction = true;
-					ButtonProp._onButtonDirection = true;
+					GetComponent<StreetProp> ().isOnAction = true;
+					ButtonProp._onButtonJump = true;
 					GetComponent<StreetProp> ().cmd = StreetProp.command.jump;
 					ButtonProp.buttonModel.setInActive ();
 				} else {
@@ -87,5 +84,19 @@ public class StreetController : MonoBehaviour {
 				isOnAction = true;
 			}
 		}
+	}
+
+	void delete(){
+		if (GetComponent<StreetProp> ().cmd == StreetProp.command.turnLeft || GetComponent<StreetProp> ().cmd == StreetProp.command.turnRight) {
+			GameController.gameModel.directionCount = GameController.gameModel.directionCount + 1;
+		}else if (GetComponent<StreetProp> ().cmd == StreetProp.command.jump) {
+			GameController.gameModel.jumpCount = GameController.gameModel.jumpCount + 1;
+		}
+		ButtonProp._isOnAction = true;
+		ButtonProp._updateCount = true;
+		isOnAction = true;
+		GetComponent<StreetProp> ().cmd = StreetProp.command.noCommand;
+		GetComponent<StreetProp> ().isOnAction = true;
+		ButtonProp.buttonModel.setInActive ();
 	}
 }

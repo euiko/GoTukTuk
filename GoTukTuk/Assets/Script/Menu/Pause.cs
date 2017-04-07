@@ -5,21 +5,32 @@ using BitBenderGames;
 
 public class Pause : MonoBehaviour {
 
+	public static bool isOnAction;
+
 	public GameObject PauseButton, PauseBlock;
 	private GameObject Character, Cam;
 	private Vector3 currentSpeed;
 
 	public void Start()
 	{
-		Cam = GameObject.FindGameObjectWithTag ("MainCamera");
+		Cam = GameObject.Find ("Main Camera");
 		Character = GameObject.Find ("bajai_jadi_texturetest_animasi(Clone)");
 		PauseBlock.SetActive (false);
 		PauseButton.SetActive (true);
+		pause ();
 	}
 
 	public void Update(){
 		if (Character == null) {
 			Character = GameObject.Find ("bajai_jadi_texturetest_animasi(Clone)");
+		}
+
+		if (isOnAction) {
+			if (GameController.gameModel.isStart) {
+				transform.FindChild ("Panel").FindChild ("notStart").gameObject.SetActive (false);
+				resume ();
+			}
+			isOnAction = false;
 		}
 	}
 

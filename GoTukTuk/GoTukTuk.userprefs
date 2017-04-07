@@ -2,29 +2,29 @@
   <DisabledProjects>
     <String>Assembly-CSharp-Editor.csproj</String>
   </DisabledProjects>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Easy Save 2\Types\ES2UserType_Level.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Controller\BajajController.cs">
     <Files>
       <File FileName="Assets\Script\Controller\ButtonController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\BajaiRaycast.cs" Line="63" Column="28" />
+      <File FileName="Assets\Script\BajaiRaycast.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\Controller\BajajController.cs" Line="151" Column="101" />
-      <File FileName="Assets\Script\Controller\GameController.cs" Line="71" Column="12" />
-      <File FileName="Assets\Script\Menu\Pause.cs" Line="28" Column="1" />
-      <File FileName="Assets\Script\Spawner.cs" Line="41" Column="73" />
+      <File FileName="Assets\Script\Controller\GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Menu\Pause.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Spawner.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\Model\PlayerDirection.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\Controller\StarController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Controller\StreetController.cs" Line="20" Column="20" />
-      <File FileName="Assets\Script\Controller\TandaController.cs" Line="23" Column="1" />
+      <File FileName="Assets\Script\Controller\StreetController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Controller\TandaController.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\Controller\TimerController.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\Other\transitionGame.cs" Line="1" Column="1" />
       <File FileName="Assets\Easy Save 2\Types\ES2UserType_Level.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Model\ButtonProp.cs" Line="46" Column="1" />
+      <File FileName="Assets\Script\Model\ButtonProp.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\Model\GameProp.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\Model\GameModel.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Model\StreetProp.cs" Line="51" Column="22" />
-      <File FileName="Assets\Script\Menu\ButtonEvent.cs" Line="7" Column="25" />
+      <File FileName="Assets\Script\Model\StreetProp.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Menu\ButtonEvent.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\Menu\ExitButton.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Controller\StageController.cs" Line="23" Column="1" />
+      <File FileName="Assets\Script\Controller\StageController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

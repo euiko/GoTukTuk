@@ -13,6 +13,7 @@ public class ButtonPlayController : MonoBehaviour {
 	void onClick(){
 		GameController.gameModel.IsStarted = true;
 		TimerController.countdownStart = false;
+		BajajController.onAction = true;
 		//GameObject.Find ("GameplaySystem").GetComponent<GameController> ().switchCam ();
 	}
 
