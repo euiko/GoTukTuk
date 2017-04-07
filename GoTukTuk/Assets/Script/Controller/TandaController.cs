@@ -25,7 +25,7 @@ public class TandaController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (go.GetComponent<StreetProp> ().isOnAction) {
-			if (go.GetComponent<StreetProp> ().turnListener (StreetProp.command.noCommand) == false) {
+			if (go.GetComponent<StreetProp> ().turnListener (StreetProp.command.noCommand) == false && go.GetComponent<StreetProp> ().turnListener (StreetProp.command.jump) == false) {
 				changeMaterial (StreetProp.commandFrom.down, 0);
 				changeMaterial (StreetProp.commandFrom.left, 270);
 				changeMaterial (StreetProp.commandFrom.up, 180);

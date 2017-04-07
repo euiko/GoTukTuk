@@ -6,7 +6,7 @@ public class BajajController : MonoBehaviour {
 
 	public static PlayerDirection playerDirection = new PlayerDirection ();
 	public static bool[] cmd = {false, false};
-	public static bool willJump, isOnJump, isOnAir, isJumped;
+	public static bool willJump, isOnJump, isOnAir, isJumped, onAction;
 
 	public WheelCollider TireBL;
 	public WheelCollider TireBR;
@@ -42,7 +42,7 @@ public class BajajController : MonoBehaviour {
 		curAngle = 0;
 		Vector3 v = rbBajai.centerOfMass;
 		v.y = -0.9f;
-		//v.z = 2.5f;
+		v.z = 2.5f;
 		rbBajai.centerOfMass = v;
 	}
 
@@ -50,6 +50,10 @@ public class BajajController : MonoBehaviour {
 		if (!GameController.gameModel.IsPaused && !isDestroyed) {
 			if (GameController.gameModel.IsStarted) {
 				this.speed = 0.2f;
+				if (onAction) {
+					rbBajai.constraints = RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+					onAction = false;
+				}
 			}
 			gameOverAction ();
 
@@ -148,7 +152,7 @@ public class BajajController : MonoBehaviour {
 		if(col.gameObject.name.Contains("jalan") && !onCollision){
 			startPos = transform.position;
 			onCollision = true;
-			rbBajai.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezePositionZ;
+			//Debug.Log ("Collide");
 		}
 
 		if (col.gameObject.name.Contains ("Collider")) {
