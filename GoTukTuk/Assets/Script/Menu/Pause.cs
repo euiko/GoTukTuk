@@ -45,7 +45,6 @@ public class Pause : MonoBehaviour {
 		GameController.gameModel.IsPaused = true;
 		GameObject.Find ("GameplaySystem").GetComponent<GameController> ().isOnPopUp = true;
 		PauseBlock.SetActive (true);
-		PauseButton.SetActive (false);
 	}
 
 	public void resume()
@@ -59,6 +58,5 @@ public class Pause : MonoBehaviour {
 		TimerController.countdownStart = true;
 		GameObject.Find ("GameplaySystem").GetComponent<GameController> ().isOnPopUp = false;
 		PauseBlock.SetActive (false);
-		PauseButton.SetActive (true);
 	}
 }
