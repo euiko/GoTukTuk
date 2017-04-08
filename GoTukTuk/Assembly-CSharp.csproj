@@ -103,6 +103,7 @@
      <Compile Include="Assets\Script\Controller\ButtonPlayController.cs" />
      <Compile Include="Assets\Script\Controller\GameController.cs" />
      <Compile Include="Assets\Script\Controller\StageController.cs" />
+     <Compile Include="Assets\Script\Controller\StageSelectController.cs" />
      <Compile Include="Assets\Script\Controller\StarController.cs" />
      <Compile Include="Assets\Script\Controller\StreetController.cs" />
      <Compile Include="Assets\Script\Controller\TandaController.cs" />

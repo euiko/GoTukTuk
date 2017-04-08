@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scene/Menu/StageSurabaya.unity
   - enabled: 1
     path: Assets/Scene/Stage1/Stage1_1_test.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/Stage1/Stage1_2.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/Stage1/Stage1_3.unity

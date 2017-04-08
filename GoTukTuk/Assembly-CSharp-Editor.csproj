@@ -177,9 +177,6 @@
  <Reference Include="TextMeshPro">
  <HintPath>I:/Unity/GoTukTuk/Assets/TextMesh Pro/Plugins/TextMeshPro.dll</HintPath>
  </Reference>
- <Reference Include="TextMeshPro-Editor">
- <HintPath>I:/Unity/GoTukTuk/Assets/TextMesh Pro/Plugins/Editor/TextMeshPro-Editor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
